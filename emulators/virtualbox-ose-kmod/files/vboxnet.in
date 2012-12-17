@@ -41,6 +41,8 @@ vboxnet_start()
 			return 1
 		fi
 	fi
+
+	%%PREFIX%%/bin/VBoxManage list hostonlyifs >/dev/null
 }
 
 vboxnet_stop()

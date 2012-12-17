@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	virtualbox-ose
-DISTVERSION=	4.1.22
+DISTVERSION=	4.2.4
 CATEGORIES=	emulators kld
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${DISTVERSION}/ \
 		http://tmp.chruetertee.ch/ \
@@ -22,12 +22,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	yasm:${PORTSDIR}/devel/yasm \
 		as86:${PORTSDIR}/devel/dev86 \
-		kmk:${PORTSDIR}/devel/kBuild-devel
+		kmk:${PORTSDIR}/devel/kBuild
 
 UNIQUENAME=	${PORTNAME}${PKGNAMESUFFIX}
 WRKSRC=		${WRKDIR}/VirtualBox-${PORTVERSION}
 USE_RC_SUBR=	vboxnet
 ONLY_FOR_ARCHS=	i386 amd64
+FETCH_ARGS=	-pRr
 USE_BZIP2=	yes
 
 HAS_CONFIGURE=	yes
@@ -37,10 +38,11 @@ CONFIGURE_ARGS+=--with-gcc="${CC}" --with-g++="${CXX}" --nofatal \
 		--build-headless
 
 CONFLICTS=	bcc-[0-9]*
-CONFLICTS_BUILD=	kBuild-[0-9]*
 CONFLICTS_INSTALL=	virtualbox-ose-kmod-devel-[3,4]* virtualbox-ose-kmod-legacy-[3,4]*
 
-OPTIONS_DEFINE=	DEBUG VIMAGE
+OPTIONS_DEFINE=	DEBUG NETMAP SYMBOLS VIMAGE
+NETMAP_DESC=	Netmap userspace packet path support in host-only driver
+SYMBOLS_DESC=	Install debug .symbols files
 VIMAGE_DESC=	VIMAGE virtual networking support
 
 .include <bsd.port.options.mk>
@@ -54,17 +56,21 @@ VBOX_BIN=	${WRKSRC}/out/${KMK_ARCH}/${KMK_BUILDTYPE}/bin/src
 
 KMK_BUILDTYPE=	release
 KMK_CONFIG=	VBOX_LIBPATH_X11=${LOCALBASE} VBOX_FREEBSD_SRC=${SRC_BASE}/sys
-KMK_FLAGS=	HostDrivers-src vboxdrv-mod VBoxNetFlt-src VBoxNetAdp-src
+KMK_FLAGS=	HostDrivers-scripts vboxdrv-mod VBoxNetFlt-src VBoxNetAdp-src
 
 MAKE_FLAGS=	SYSDIR=${SRC_BASE}/sys
 
 .if ${PORT_OPTIONS:MDEBUG}
 KMK_FLAGS+=	BUILD_TYPE=debug
 KMK_BUILDTYPE=	debug
-MAKE_FLAGS+=	DEBUG_FLAGS="-O1 -g"
-PLIST_SUB+=	WITH_DEBUG=""
+MAKE_FLAGS+=	DEBUG_FLAGS="-O1"
+.endif
+.if ${PORT_OPTIONS:MDEBUG} || ${PORT_OPTIONS:MSYMBOLS}
+EXTRA_PATCHES+=	${FILESDIR}/extrapatch-Config.kmk
+PLIST_SUB+=	WITH_SYMBOLS=""
+MAKE_FLAGS+=	DEBUG_FLAGS="-g"
 .else
-PLIST_SUB+=	WITH_DEBUG="@comment "
+PLIST_SUB+=	WITH_SYMBOLS="@comment "
 .endif
 
 .if ${ARCH} == i386
@@ -87,6 +93,11 @@ BROKEN=		Does not compile on FreeBSD < 8.2
 IGNORE=		newer kernel is required to build with VIMAGE
 .endif
 
+# Netmap MFC is r235549; next bump was r235786 to 900506
+.if ${OSVERSION} < 900506 && !empty(PORT_OPTIONS:MNETMAP)
+IGNORE=		newer kernel is required to build with NETMAP
+.endif
+
 post-patch:
 	@${ECHO} 'VBOX_WITH_VBOXDRV = 1' > ${WRKSRC}/LocalConfig.kmk
 	@${ECHO} 'VBOX_WITH_NETFLT = 1' >> ${WRKSRC}/LocalConfig.kmk
@@ -94,6 +105,9 @@ post-patch:
 	@${ECHO} 'VBOX_WITH_ADDITIONS =' >> ${WRKSRC}/LocalConfig.kmk
 .if ${PORT_OPTIONS:MVIMAGE}
 	@${ECHO} 'VBOX_WITH_NETFLT_VIMAGE = 1' >> ${WRKSRC}/LocalConfig.kmk
+.endif
+.if ${PORT_OPTIONS:MNETMAP}
+	@${ECHO} 'VBOX_WITH_NETMAP = 1' >> ${WRKSRC}/LocalConfig.kmk
 .endif
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \
 		${WRKSRC}/Config.kmk \
@@ -113,7 +127,7 @@ do-install:
 	${INSTALL_KLD} ${VBOX_BIN}/vboxdrv/vboxdrv.ko ${KMODDIR}
 	${INSTALL_KLD} ${VBOX_BIN}/vboxnetadp/vboxnetadp.ko ${KMODDIR}
 	${INSTALL_KLD} ${VBOX_BIN}/vboxnetflt/vboxnetflt.ko ${KMODDIR}
-.if ${PORT_OPTIONS:MDEBUG}
+.if ${PORT_OPTIONS:MDEBUG} || ${PORT_OPTIONS:MSYMBOLS}
 	${INSTALL_KLD} ${VBOX_BIN}/vboxdrv/vboxdrv.ko.symbols ${KMODDIR}
 	${INSTALL_KLD} ${VBOX_BIN}/vboxnetadp/vboxnetadp.ko.symbols ${KMODDIR}
 	${INSTALL_KLD} ${VBOX_BIN}/vboxnetflt/vboxnetflt.ko.symbols ${KMODDIR}
