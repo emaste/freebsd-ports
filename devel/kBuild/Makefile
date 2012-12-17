@@ -10,10 +10,11 @@ DISTVERSION=	${KBUILD_VERSION}
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netlabs.org/pub/kbuild/ \
 		http://tmp.chruetertee.ch/ \
-		http://disasterarea.chruetertee.ch/
-DISTNAME=	${PORTNAME}-${DISTVERSION}-src
+		http://disasterarea.chruetertee.ch/ \
+		http://tsatsenko.ru/ports/distfiles/
+DISTNAME=	${PORTNAME}-${DISTVERSION}r2662-src
 
-MAINTAINER=	gahr@FreeBSD.org
+MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	Makefile framework
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex
