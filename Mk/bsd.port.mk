@@ -2002,6 +2002,11 @@ NONEXISTENT?=	/nonexistent
 CHECKSUM_ALGORITHMS?= sha256
 
 DISTINFO_FILE?=		${MASTERDIR}/distinfo
+TIMESTAMP=			1461268100
+
+.if exists(${DISTINFO_FILE})
+TIMESTAMP!= ${AWK} -F' = ' -v ts=${TIMESTAMP} '/^TIMESTAMP/ { ts=$$2 } END { print ts}' ${DISTINFO_FILE}
+.endif
 
 MAKE_FLAGS?=	-f
 MAKEFILE?=		Makefile
@@ -2014,6 +2019,7 @@ MAKE_ENV+=		PREFIX=${PREFIX} \
 			LDFLAGS="${LDFLAGS}" LIBS="${LIBS}" \
 			CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" \
 			MANPREFIX="${MANPREFIX}"
+PKG_ENV+=	SOURCE_DATE_EPOCH=${TIMESTAMP}
 
 # Add -fno-strict-aliasing to CFLAGS with optimization level -O2 or higher.
 # gcc 4.x enable strict aliasing optimization with -O2 which is known to break
