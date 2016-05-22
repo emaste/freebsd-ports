@@ -1998,7 +1998,8 @@ MAKE_ENV+=		PREFIX=${PREFIX} \
 			CPP="${CPP}" CPPFLAGS="${CPPFLAGS}" \
 			LDFLAGS="${LDFLAGS}" LIBS="${LIBS}" \
 			CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" \
-			MANPREFIX="${MANPREFIX}"
+			MANPREFIX="${MANPREFIX}" \
+			SOURCE_DATE_EPOCH=${TIMESTAMP}
 PKG_ENV+=	SOURCE_DATE_EPOCH=${TIMESTAMP}
 
 # Add -fno-strict-aliasing to CFLAGS with optimization level -O2 or higher.
