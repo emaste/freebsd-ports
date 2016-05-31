@@ -1,0 +1,21 @@
+From 7a89015a5466412597b9a0157c0ab1af1914a81a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Alexis=20Bienven=C3=BCe?= <pado@passoire.fr>
+Date: Thu, 28 Apr 2016 23:37:36 +0200
+Subject: [PATCH] Corrects copyright year using SOURCE_DATE_EPOCH if set
+
+---
+ sphinx/util/i18n.py                        |  2 +-
+
+diff --git sphinx/util/i18n.py sphinx/util/i18n.py
+index f4a8bce..2209ae5 100644
+--- sphinx/util/i18n.py
++++ sphinx/util/i18n.py
+@@ -188,7 +188,7 @@ def format_date(format, date=None, language=None, warn=None):
+         # See https://wiki.debian.org/ReproducibleBuilds/TimestampsProposal
+         source_date_epoch = os.getenv('SOURCE_DATE_EPOCH')
+         if source_date_epoch is not None:
+-            date = gmtime(float(source_date_epoch))
++            date = datetime.utcfromtimestamp(float(source_date_epoch))
+         else:
+             date = datetime.now()
+ 
