@@ -47,6 +47,7 @@ INFO=		as \
 .endif
 
 CONFIGURE_ARGS+=	--disable-werror \
+			--enable-deterministic-archives \
 			--with-sysroot=/
 
 MAKE_ENV+=	ac_cv_func_sbrk=0
