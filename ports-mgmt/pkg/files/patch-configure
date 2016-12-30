@@ -1,0 +1,110 @@
+--- configure.orig	2016-12-03 16:09:27.000000000 -0500
++++ configure	2016-12-29 19:30:52.953763000 -0500
+@@ -14667,7 +14667,7 @@
+   $as_echo_n "(cached) " >&6
+ else
+   ac_save_CFLAGS="$CFLAGS"
+-                CFLAGS="-Werror $CFLAGS"
++                CFLAGS="$CFLAGS -Werror"
+                 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <stdlib.h>
+@@ -14701,7 +14701,7 @@
+   $as_echo_n "(cached) " >&6
+ else
+   ac_save_CFLAGS="$CFLAGS"
+-                CFLAGS="-Werror $CFLAGS"
++                CFLAGS="$CFLAGS -Werror"
+                 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <stdlib.h>
+@@ -14735,7 +14735,7 @@
+   $as_echo_n "(cached) " >&6
+ else
+   ac_save_CFLAGS="$CFLAGS"
+-                CFLAGS="-Werror $CFLAGS"
++                CFLAGS="$CFLAGS -Werror"
+                 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <libutil.h>
+@@ -14765,11 +14765,11 @@
+ 
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking for BSD dirname(const char *)" >&5
+ $as_echo_n "checking for BSD dirname(const char *)... " >&6; }
+-if ${ac_cv_func_dirname+:} false; then :
++if ${ac_cv_func_bsd_dirname+:} false; then :
+   $as_echo_n "(cached) " >&6
+ else
+   ac_save_CFLAGS="$CFLAGS"
+-		CFLAGS="-Werror $CFLAGS"
++		CFLAGS="$CFLAGS -Werror"
+ 		cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <libgen.h>
+@@ -14782,16 +14782,16 @@
+ }
+ _ACEOF
+ if ac_fn_c_try_compile "$LINENO"; then :
+-  ac_cv_func_dirname=yes
++  ac_cv_func_bsd_dirname=yes
+ else
+-  ac_cv_func_dirname=no
++  ac_cv_func_bsd_dirname=no
+ fi
+ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+ 		CFLAGS="$ac_save_CFLAGS"
+ fi
+-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_func_dirname" >&5
+-$as_echo "$ac_cv_func_dirname" >&6; }
+-if test "$ac_cv_func_dirname" = yes ; then
++{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_func_bsd_dirname" >&5
++$as_echo "$ac_cv_func_bsd_dirname" >&6; }
++if test "$ac_cv_func_bsd_dirname" = yes ; then
+ 
+ $as_echo "#define HAVE_BSD_DIRNAME 1" >>confdefs.h
+ 
+@@ -14803,7 +14803,7 @@
+   $as_echo_n "(cached) " >&6
+ else
+   ac_save_CFLAGS="$CFLAGS"
+-		CFLAGS="-Werror $CFLAGS"
++		CFLAGS="$CFLAGS -Werror"
+ 		cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <sys/param.h>
+@@ -14870,11 +14870,11 @@
+ 
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking for BSD basename(const char *)" >&5
+ $as_echo_n "checking for BSD basename(const char *)... " >&6; }
+-if ${ac_cv_func_basename+:} false; then :
++if ${ac_cv_func_bsd_basename+:} false; then :
+   $as_echo_n "(cached) " >&6
+ else
+   ac_save_CFLAGS="$CFLAGS"
+-		CFLAGS="-Werror $CFLAGS"
++		CFLAGS="$CFLAGS -Werror"
+ 		cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <libgen.h>
+@@ -14887,16 +14887,16 @@
+ }
+ _ACEOF
+ if ac_fn_c_try_compile "$LINENO"; then :
+-  ac_cv_func_basename=yes
++  ac_cv_func_bsd_basename=yes
+ else
+-  ac_cv_func_basename=no
++  ac_cv_func_bsd_basename=no
+ fi
+ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+ 		CFLAGS="$ac_save_CFLAGS"
+ fi
+-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_func_basename" >&5
+-$as_echo "$ac_cv_func_basename" >&6; }
+-if test "$ac_cv_func_basename" = yes ; then
++{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_func_bsd_basename" >&5
++$as_echo "$ac_cv_func_bsd_basename" >&6; }
++if test "$ac_cv_func_bsd_basename" = yes ; then
+ 
+ $as_echo "#define HAVE_BSD_BASENAME 1" >>confdefs.h
+ 
