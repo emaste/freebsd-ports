@@ -91,11 +91,7 @@ _SUF1=	_${PORTREVISION}
 .endif
 
 .if ${OPSYS} == "FreeBSD"
-.if exists(/usr/sbin/dtrace) && (${OSVERSION} > 1100032) && (${ARCH} == "amd64" || ${ARCH} == "i386")
-CONFIGURE_ARGS+=	--enable-dtrace
-.else
 CONFIGURE_ARGS+=	--disable-dtrace
-.endif
 .endif
 
 .if ${ARCH} == "powerpc64"
