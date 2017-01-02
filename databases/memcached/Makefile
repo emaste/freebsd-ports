@@ -19,7 +19,7 @@ CONFLICTS=	memcached-1.2*
 
 # Dtrace option disabled until it is fixed upstream
 OPTIONS_DEFINE=		SASL DOCS DTRACE
-OPTIONS_DEFAULT=	SASL DTRACE
+OPTIONS_DEFAULT=	SASL
 
 .if !exists(/usr/sbin/dtrace)
 OPTIONS_EXCLUDE+=	DTRACE

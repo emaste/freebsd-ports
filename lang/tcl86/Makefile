@@ -21,7 +21,6 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 OPTIONS_DEFINE=	TCLMAN TZDATA MODULES THREADS DEBUG
 OPTIONS_DEFINE_amd64=	DTRACE
 OPTIONS_DEFAULT=MODULES THREADS
-OPTIONS_DEFAULT_amd64=	DTRACE
 TCLMAN_DESC=	Install Tcl function manpages
 TZDATA_DESC=	Install Tcl timezone data
 MODULES_DESC=	Install Tcl common modules
