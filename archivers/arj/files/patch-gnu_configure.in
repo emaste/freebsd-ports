@@ -1,0 +1,10 @@
+--- gnu/configure.in.orig	2017-01-20 23:17:27.771296000 +0000
++++ gnu/configure.in	2017-01-20 23:17:31.994024000 +0000
+@@ -60,7 +60,6 @@
+ *bsd*)
+ 	AC_DEFINE(ELF_EXECUTABLES)
+         DLL_FLAGS="-shared -export-dynamic"
+-        LD_STRIP="gnu/stripgcc.lnk"
+ 	;;
+ interix3*)
+ 	# not ELF
