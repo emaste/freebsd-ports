@@ -116,6 +116,8 @@ LIBBLURAY_CONFIGURE_ENABLE=	bluray
 
 .include <bsd.port.options.mk>
 
+CFLAGS+= -fPIC
+
 .if ${ARCH} == "i386"
 CFLAGS+=	-fomit-frame-pointer
 .endif
