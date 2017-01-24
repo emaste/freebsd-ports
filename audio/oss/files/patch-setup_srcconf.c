@@ -1,6 +1,15 @@
---- setup/srcconf.c.orig	2015-01-28 08:07:32 UTC
-+++ setup/srcconf.c
-@@ -195,7 +195,7 @@ parse_config (FILE * f, conf_t * conf, c
+--- setup/srcconf.c.orig	2017-01-24 14:09:01.712959000 +0000
++++ setup/srcconf.c	2017-01-24 14:24:49.735800000 +0000
+@@ -93,7 +93,7 @@
+ static int do_warning_checks=1;
+ 
+ static char *shlib_cflags = "-shared -fPIC";
+-static char *shlib_ldflags = "-shared -fPIC";
++static char *shlib_ldflags = "-shared";
+ 
+ static char *extra_libraries = "";
+ 
+@@ -195,7 +195,7 @@
  	{
  	  parms = "";
  	  if (getenv ("OGG_SUPPORT") != NULL)
