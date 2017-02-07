@@ -1,0 +1,11 @@
+--- contrib/spi/Makefile.orig	2017-02-07 19:09:39.695097000 +0000
++++ contrib/spi/Makefile	2017-02-07 19:10:14.666979000 +0000
+@@ -16,7 +16,7 @@
+ # comment out if you want a quieter refint package for other uses
+ PG_CPPFLAGS = -DREFINT_VERBOSE
+ 
+-LDFLAGS_SL += -L$(top_builddir)/src/port -lpgport
++LDFLAGS_SL += -L$(top_builddir)/src/port
+ 
+ ifdef USE_PGXS
+ PG_CONFIG = pg_config
