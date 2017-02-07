@@ -27,6 +27,7 @@ INSTALLS_ICONS=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+CFLAGS+=        -fPIC
 
 DOCSDIR=	${PREFIX}/share/doc/xine-ui
 
