@@ -24,6 +24,8 @@ DISTINFO_FILE=	${.CURDIR}/../${PORTNAME}/distinfo
 PATCHDIR=	${.CURDIR}/../${PORTNAME}/files
 PKGMESSAGE=	${.CURDIR}/../${PORTNAME}/pkg-message
 
+CFLAGS+=        -fPIC
+
 IOQ3?=		CLIENT
 IOQ3ARCH?=	${ARCH}
 # OpenArena doc is too messy to bother
