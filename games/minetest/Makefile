@@ -21,6 +21,8 @@ USES=		cmake iconv:wchar_t
 CMAKE_ARGS=	-DCUSTOM_MANDIR="${PREFIX}/man" \
 		-DCUSTOM_EXAMPLE_CONF_DIR="${PREFIX}/etc"
 
+CFLAGS+=        -fPIC
+
 PORTDATA=	*
 PORTDOCS=	*
 
