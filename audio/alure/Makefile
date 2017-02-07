@@ -16,6 +16,8 @@ USES=		cmake openal:soft pkgconfig
 USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DBUILD_STATIC:BOOL=FALSE
 
+CFLAGS+=        -fPIC
+
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
