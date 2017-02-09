@@ -31,6 +31,7 @@ USES=			bison cpe iconv makeinfo pathfix
 GNU_CONFIGURE=		yes
 OPTIONS_SUB=		yes
 CPE_VENDOR=		gnu
+USE_AUTOTOOLS=          autoconf
 
 COLONBREAKSWORDS_EXTRA_PATCHES=	${PATCHDIR}/extrapatch-colonbreakswords
 
