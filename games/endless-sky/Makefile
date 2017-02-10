@@ -22,6 +22,8 @@ USE_SDL=	sdl2
 USE_GL=		gl glew
 INSTALLS_ICONS=	yes
 
+CFLAGS+=        -fPIC
+
 PORTDATA=	*
 
 post-build:
