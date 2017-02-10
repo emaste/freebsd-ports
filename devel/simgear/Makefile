@@ -19,6 +19,8 @@ USE_XORG=	ice sm x11 xext xi xmu xt
 USE_GL=		gl glu glut
 USES=		alias cmake compiler cpe jpeg openal:al,alut tar:bzip2
 
+CFLAGS+=        -fPIC
+
 .include <bsd.port.pre.mk>
 
 # When building with Gcc, needs Gcc 4.6+
