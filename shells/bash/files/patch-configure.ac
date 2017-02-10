@@ -1,0 +1,11 @@
+--- configure.ac.old	2017-02-09 17:24:41.296148000 +0000
++++ configure.ac	2017-02-09 17:24:48.760420000 +0000
+@@ -826,8 +826,6 @@
+ BASH_CHECK_DECL(strtoull)
+ BASH_CHECK_DECL(strtoumax)
+ 
+-AC_FUNC_MKTIME
+-
+ dnl
+ dnl Checks for lib/intl and related code (uses some of the output from
+ dnl AM_GNU_GETTEXT)
