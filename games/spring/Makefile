@@ -88,6 +88,8 @@ CMAKE_ARGS+=	-DTRACE_SYNC=true -DSYNCDEBUG=true
 CMAKE_BUILD_TYPE=DEBUG2
 .endif
 
+CFLAGS+=        -fPIC
+
 .if ! ${PORT_OPTIONS:MPR_DOWNLOADER}
 post-extract:
 	@${RM} ${WRKSRC}/tools/pr-downloader/CMakeLists.txt
