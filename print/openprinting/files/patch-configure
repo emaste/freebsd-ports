@@ -1,0 +1,11 @@
+--- configure.orig	2017-02-13 19:21:04.930158000 +0000
++++ configure	2017-02-13 19:21:22.604508000 +0000
+@@ -20913,7 +20913,7 @@
+ fi
+ 
+ case "$os" in
+-	Linux)
++	Linux|*BSD)
+ 		MAP_FILTER="; #"
+ 		MAPFLAGS="-Wl,--version-script=mapfile" ;;
+ 	SunOS)
