@@ -1737,9 +1737,10 @@ PKG_DEPENDS+=	${LOCALBASE}/sbin/pkg:${PKG_ORIGIN}
 .include "${PORTSDIR}/Mk/bsd.gcc.mk"
 .endif
 
-.if !defined(USE_BINUTILS)
 _TEST_LD=/usr/bin/ld
-.  if defined(LLD_UNSAFE) && ${_TEST_LD:tA} == "/usr/bin/ld.lld"
+.if defined(LLD_UNSAFE) && ${_TEST_LD:tA} == "/usr/bin/ld.lld"
+LDFLAGS+=	-fuse-ld=bfd
+.  if !defined(USE_BINUTILS)
 .    if exists(/usr/bin/ld.bfd)
 LD=	/usr/bin/ld.bfd
 CONFIGURE_ENV+=	LD=${LD}
