@@ -51,6 +51,7 @@ USES=		autoreconf bison compiler:c11 cpe gettext gmake iconv libtool pathfix \
 		perl5 python shebangfix tar:bzip2
 USE_GNOME=	glib20
 USE_PERL5=	build
+LLD_UNSAFE=	yes
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	scripts/mono-heapviz
