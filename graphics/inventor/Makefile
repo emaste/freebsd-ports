@@ -21,6 +21,7 @@ CONFLICTS=	Coin-[0-9]* SoXt-[0-9]*
 USE_XORG=	x11 xext xi xp xt
 USE_GL=		glu glw
 USES=		gmake iconv jpeg motif
+LLD_UNSAFE=	yes
 USE_LDCONFIG=	yes
 ONLY_FOR_ARCHS=	i386 amd64
 MAKE_JOBS_UNSAFE=	yes
