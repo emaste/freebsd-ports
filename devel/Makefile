@@ -319,6 +319,7 @@
     SUBDIR += clojure-cider
     SUBDIR += cloudabi
     SUBDIR += cloudabi-toolchain
+    SUBDIR += clthreads
     SUBDIR += cltune
     SUBDIR += cmake
     SUBDIR += cmake-doc
@@ -729,8 +730,10 @@
     SUBDIR += geany-plugin-tableconvert
     SUBDIR += geany-plugin-treebrowser
     SUBDIR += geany-plugin-updatechecker
+    SUBDIR += geany-plugin-utilslib
     SUBDIR += geany-plugin-vc
     SUBDIR += geany-plugin-webhelper
+    SUBDIR += geany-plugin-workbench
     SUBDIR += geany-plugin-xmlsnippets
     SUBDIR += geany-plugins
     SUBDIR += geany-plugins-l10n
@@ -3093,6 +3096,7 @@
     SUBDIR += p5-POSIX-strftime-Compiler
     SUBDIR += p5-POSIX-strptime
     SUBDIR += p5-PPerl
+    SUBDIR += p5-Pthread-GetThreadId
     SUBDIR += p5-PV
     SUBDIR += p5-Package-Constants
     SUBDIR += p5-Package-DeprecationManager
@@ -5465,6 +5469,7 @@
     SUBDIR += rubygem-filesize
     SUBDIR += rubygem-flexmock
     SUBDIR += rubygem-flipper
+    SUBDIR += rubygem-flipper010
     SUBDIR += rubygem-fluent-logger
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core
@@ -6033,7 +6038,6 @@
     SUBDIR += tinyq
     SUBDIR += tkcon
     SUBDIR += tkcvs
-    SUBDIR += tkinspect
     SUBDIR += tkmerge
     SUBDIR += tkp4
     SUBDIR += tla
