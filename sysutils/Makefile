@@ -301,6 +301,7 @@
     SUBDIR += fatback
     SUBDIR += fconfig
     SUBDIR += fcron
+    SUBDIR += fd
     SUBDIR += fdupes
     SUBDIR += feather
     SUBDIR += fetchlog
@@ -472,6 +473,7 @@
     SUBDIR += i7z
     SUBDIR += iat
     SUBDIR += immortal
+    SUBDIR += incron
     SUBDIR += inotify-tools
     SUBDIR += installwatch
     SUBDIR += intel-nvmupdate
@@ -833,6 +835,8 @@
     SUBDIR += php70-posix
     SUBDIR += php71-fileinfo
     SUBDIR += php71-posix
+    SUBDIR += php72-fileinfo
+    SUBDIR += php72-posix
     SUBDIR += phybs
     SUBDIR += pick
     SUBDIR += pidof

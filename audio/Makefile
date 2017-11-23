@@ -128,6 +128,7 @@
     SUBDIR += emms
     SUBDIR += enscribe
     SUBDIR += epos-devel
+    SUBDIR += eq10q-lv2
     SUBDIR += esound
     SUBDIR += espeak
     SUBDIR += esperanza
@@ -636,6 +637,7 @@
     SUBDIR += playmidi
     SUBDIR += pm3umpdl
     SUBDIR += pms
+    SUBDIR += pms-devel
     SUBDIR += pocketsphinx
     SUBDIR += polyphone
     SUBDIR += portaudio

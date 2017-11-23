@@ -292,6 +292,7 @@
     SUBDIR += goocanvasmm2
     SUBDIR += goom
     SUBDIR += gource
+    SUBDIR += goxel
     SUBDIR += gpaint
     SUBDIR += gphoto2
     SUBDIR += gpicview
@@ -792,6 +793,8 @@
     SUBDIR += php70-gd
     SUBDIR += php71-exif
     SUBDIR += php71-gd
+    SUBDIR += php72-exif
+    SUBDIR += php72-gd
     SUBDIR += phplot
     SUBDIR += picpuz
     SUBDIR += piddle
