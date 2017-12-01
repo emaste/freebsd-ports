@@ -2006,7 +2006,8 @@ DISTINFO_FILE?=		${MASTERDIR}/distinfo
 # Timestamp for package archive metadata, for reproducible builds, with a
 # default for ports that do not override it via distinfo.
 TIMESTAMP=			1500000000
-.if exists(${DISTINFO_FILE})
+.if !make(*depends*) && empty(.MAKEFLAGS:M-V) && \
+    empty(.MAKEFLAGS:MTIMESTAMP) && exists(${DISTINFO_FILE})
 TIMESTAMP!= ${AWK} -F' = ' -v ts=${TIMESTAMP} '/^TIMESTAMP/ { ts=$$2 } END { print ts}' ${DISTINFO_FILE}
 .endif
 
