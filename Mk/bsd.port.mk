@@ -2022,7 +2022,9 @@ MAKE_ENV+=		PREFIX=${PREFIX} \
 			LDFLAGS="${LDFLAGS}" LIBS="${LIBS}" \
 			CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" \
 			MANPREFIX="${MANPREFIX}"
+.if empty(USES:Mpython*)
 PKG_ENV+=	SOURCE_DATE_EPOCH=${TIMESTAMP}
+.endif
 
 # Add -fno-strict-aliasing to CFLAGS with optimization level -O2 or higher.
 # gcc 4.x enable strict aliasing optimization with -O2 which is known to break
