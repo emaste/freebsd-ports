@@ -21,6 +21,7 @@ USES=		ncurses zip
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 MAKEFILE=	Makefile.bsd
 MAKE_ARGS+=	PLIBS="${LDFLAGS:M-L*} -lncurses"
 

@@ -19,6 +19,7 @@ OPTIONS_DEFINE=	DOCS
 
 USES=		gmake tcl:tea
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_src$//}
 
 INFO=		${PORTNAME} ${PORTNAME}-zlib

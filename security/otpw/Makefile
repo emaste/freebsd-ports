@@ -16,6 +16,7 @@ USERS=		${PORTNAME}
 
 MAKE_ARGS=	CC="${CC}"
 USES=		gmake
+LLD_UNSAFE=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/otpw-gen ${STAGEDIR}${PREFIX}/bin

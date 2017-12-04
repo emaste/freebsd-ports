@@ -17,6 +17,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 USES=		cmake:outsource tar:tgz
 USE_GL=		gl
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-source
 
 OPTIONS_DEFINE=	DOCS

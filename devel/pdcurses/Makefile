@@ -13,6 +13,7 @@ COMMENT=	Curses library implementation for Win32, DOS, OS/2, and X11
 CONFLICTS=	pdcurses-the-[0-9]*
 
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 USE_XORG=	x11 xext sm ice xt xaw
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=yes

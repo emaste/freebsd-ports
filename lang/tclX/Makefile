@@ -19,6 +19,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME:tl}${PORTVERSION:R}
 
 USES=		autoreconf alias tcl:tea tar:bzip2
 USE_LDCONFIG=	${PREFIX}/lib/tclx${PORTVERSION:R}
+LLD_UNSAFE=	yes
 CONFIGURE_ARGS+=--enable-shared \
 		--with-help=Help
 PLIST_SUB=	TCLX_VER=${PORTVERSION:R}
