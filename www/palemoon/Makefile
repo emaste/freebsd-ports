@@ -2,8 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	palemoon
-DISTVERSION=	27.6.1
+DISTVERSION=	27.6.2
 DISTVERSIONSUFFIX=_Release
+PORTREVISION=	1
 CATEGORIES=	www ipv6
 
 MAINTAINER=	lichray@gmail.com
@@ -17,7 +18,7 @@ BUILD_DEPENDS=	nspr>=4.15:devel/nspr \
 		png>=1.6.16:graphics/png \
 		libvpx>=1.5.0:multimedia/libvpx \
 		sqlite3>=3.19.3:databases/sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
 		autoconf-2.13:devel/autoconf213 \
 		yasm:devel/yasm \
 		zip:archivers/zip
@@ -42,7 +43,7 @@ MOZ_OPTIONS=	--enable-application=browser \
 		--enable-jemalloc-lib
 
 OPTIONS_DEFAULT=	BUNDLED_CAIRO GTK2
-OPTIONS_EXCLUDE=	DTRACE INTEGER_SAMPLES JACK SNDIO TEST
+OPTIONS_EXCLUDE=	DTRACE INTEGER_SAMPLES JACK TEST
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 

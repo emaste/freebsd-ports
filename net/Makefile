@@ -1029,6 +1029,7 @@
     SUBDIR += py-pcapy
     SUBDIR += py-pcs
     SUBDIR += py-port-for
+    SUBDIR += py-portend
     SUBDIR += py-pygeoip
     SUBDIR += py-pyldap
     SUBDIR += py-pynmsg
@@ -1089,9 +1090,6 @@
     SUBDIR += py-xmlrpc
     SUBDIR += py-zope.proxy
     SUBDIR += py-zsi
-    SUBDIR += py3-netifaces
-    SUBDIR += py3-pysocks
-    SUBDIR += py3-urllib3
     SUBDIR += pygopherd
     SUBDIR += pynids
     SUBDIR += pyrad
@@ -1172,6 +1170,7 @@
     SUBDIR += rubygem-fog-atmos
     SUBDIR += rubygem-fog-aws
     SUBDIR += rubygem-fog-aws0
+    SUBDIR += rubygem-fog-aws1
     SUBDIR += rubygem-fog-azure
     SUBDIR += rubygem-fog-brightbox
     SUBDIR += rubygem-fog-cloudatcost
@@ -1228,6 +1227,7 @@
     SUBDIR += rubygem-omniauth-github-discourse
     SUBDIR += rubygem-omniauth-github11
     SUBDIR += rubygem-omniauth-google-oauth2
+    SUBDIR += rubygem-omniauth-kerberos
     SUBDIR += rubygem-omniauth-oauth
     SUBDIR += rubygem-omniauth-oauth2
     SUBDIR += rubygem-omniauth-openid

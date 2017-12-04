@@ -862,6 +862,7 @@
     SUBDIR += py-gd
     SUBDIR += py-gdal
     SUBDIR += py-gimp
+    SUBDIR += py-gizeh
     SUBDIR += py-glewpy
     SUBDIR += py-goocanvas
     SUBDIR += py-gphoto2
@@ -882,6 +883,7 @@
     SUBDIR += py-openexr
     SUBDIR += py-openimageio
     SUBDIR += py-paint
+    SUBDIR += py-photocollage
     SUBDIR += py-pillow
     SUBDIR += py-pivy
     SUBDIR += py-plotly
@@ -904,6 +906,7 @@
     SUBDIR += py-sane
     SUBDIR += py-scikit-image
     SUBDIR += py-seqdiag
+    SUBDIR += py-sk1
     SUBDIR += py-sorl-thumbnail
     SUBDIR += py-soya3d
     SUBDIR += py-stltools
@@ -911,10 +914,6 @@
     SUBDIR += py-traitsui
     SUBDIR += py-wand
     SUBDIR += py-webcolors
-    SUBDIR += py3-cairo
-    SUBDIR += py3-imagesize
-    SUBDIR += py3-pillow
-    SUBDIR += py3-pygraphviz
     SUBDIR += pygts
     SUBDIR += pymorph
     SUBDIR += pysvg

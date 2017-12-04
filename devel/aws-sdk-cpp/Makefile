@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	aws-sdk-cpp
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.15
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org
@@ -14,6 +14,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl
 
 BROKEN_aarch64=		fails to build: runaway process
 BROKEN_armv6=		fails to build: runaway process
+BROKEN_armv7=		fails to build: runaway process
 BROKEN_powerpc64=	fails to build: runaway process
 
 USE_GITHUB=	yes

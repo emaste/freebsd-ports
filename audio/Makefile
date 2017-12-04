@@ -65,6 +65,7 @@
     SUBDIR += cantata
     SUBDIR += caps-lv2
     SUBDIR += caps-plugins
+    SUBDIR += carla
     SUBDIR += cava
     SUBDIR += ccaudio2
     SUBDIR += cd-console
@@ -320,6 +321,7 @@
     SUBDIR += hs-ALUT
     SUBDIR += hs-OpenAL
     SUBDIR += hs-libmpd
+    SUBDIR += hts_engine-API
     SUBDIR += hydrogen
     SUBDIR += hydrogen-devel
     SUBDIR += icecast-kh
@@ -684,8 +686,6 @@
     SUBDIR += py-tagpy
     SUBDIR += py-vorbis
     SUBDIR += py-xmms2
-    SUBDIR += py3-mutagen
-    SUBDIR += py3-pylast
     SUBDIR += pytone
     SUBDIR += qjackctl
     SUBDIR += qmidiarp
@@ -731,7 +731,6 @@
     SUBDIR += sdl_sound
     SUBDIR += sfront
     SUBDIR += shairplay
-    SUBDIR += shairport
     SUBDIR += shairport-sync
     SUBDIR += sherlock-lv2
     SUBDIR += shntool
@@ -753,6 +752,7 @@
     SUBDIR += solfege
     SUBDIR += sonata
     SUBDIR += sonic-visualiser
+    SUBDIR += sorcer-lv2
     SUBDIR += sound-juicer
     SUBDIR += soundconverter
     SUBDIR += soundgrab
