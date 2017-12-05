@@ -18,7 +18,7 @@
 +	    # but is completely ignored by OS mmap
 +            use_large_address_space=no
 + 	elif test "$ghc_host_os" = "freebsd" ; then
-+	    # FreeBSD does not support mmap with MAP_NORESERVE,r emoved in r273250.
++	    # FreeBSD does not support mmap with MAP_NORESERVE, removed in r273250.
  	    # The flag MAP_NORESERVE is supported for source compatibility reasons,
  	    # but is completely ignored by OS mmap
              use_large_address_space=no
