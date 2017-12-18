@@ -19,7 +19,6 @@
     SUBDIR += afl
     SUBDIR += afterglow
     SUBDIR += aide
-    SUBDIR += aimsniff
     SUBDIR += akmos
     SUBDIR += amap
     SUBDIR += amavis-stats
@@ -38,6 +37,7 @@
     SUBDIR += barnyard2
     SUBDIR += barnyard2-sguil
     SUBDIR += base
+    SUBDIR += base-audit
     SUBDIR += bcrypt
     SUBDIR += bcwipe
     SUBDIR += bdes
@@ -1085,6 +1085,7 @@
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-shibboleth
     SUBDIR += rubygem-openssl
+    SUBDIR += rubygem-openssl20
     SUBDIR += rubygem-openssl-ccm
     SUBDIR += rubygem-openvas-omp
     SUBDIR += rubygem-origami
@@ -1168,6 +1169,7 @@
     SUBDIR += snort
     SUBDIR += snort-rep
     SUBDIR += snort2pfcd
+    SUBDIR += snort3
     SUBDIR += snortreport
     SUBDIR += snortsam
     SUBDIR += snortsnarf
@@ -1237,6 +1239,7 @@
     SUBDIR += truecrypt
     SUBDIR += tsshbatch
     SUBDIR += tthsum
+    SUBDIR += u2f-devd
     SUBDIR += umit
     SUBDIR += unhide
     SUBDIR += unicornscan
