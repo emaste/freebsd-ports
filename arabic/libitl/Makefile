@@ -14,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cmake pkgconfig
 USE_LDCONFIG=	yes
-LLD_UNSAFE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	arabeyes-org
