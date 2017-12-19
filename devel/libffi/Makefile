@@ -19,11 +19,6 @@ USES=		libtool pathfix
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 
-.include <bsd.port.pre.mk>
-.if ${ARCH} == "i386"
-LLD_UNSAFE=	yes
-.endif
-
 INSTALL_TARGET=	install-strip
 INFO=		libffi
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
@@ -39,4 +34,4 @@ post-install:
 	@${LN} -sf ../lib/libffi-${PORTVERSION}/include/ffitarget.h \
 	    ${STAGEDIR}${PREFIX}/include/
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
