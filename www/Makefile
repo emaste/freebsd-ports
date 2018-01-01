@@ -566,8 +566,6 @@
     SUBDIR += npm-node4
     SUBDIR += npm-node6
     SUBDIR += npm-node8
-    SUBDIR += npm2
-    SUBDIR += npm3
     SUBDIR += npm4
     SUBDIR += nspluginwrapper
     SUBDIR += nuvolaplayer-8tracks
@@ -1551,6 +1549,7 @@
     SUBDIR += py-buku
     SUBDIR += py-cachecontrol
     SUBDIR += py-caldav
+    SUBDIR += py-cheroot
     SUBDIR += py-cherrypy
     SUBDIR += py-cherrypy-old
     SUBDIR += py-clientform
@@ -1682,7 +1681,7 @@
     SUBDIR += py-flask-uploads
     SUBDIR += py-flask-wtf
     SUBDIR += py-flexget
-    SUBDIR += py-flup
+    SUBDIR += py-flup6
     SUBDIR += py-formalchemy
     SUBDIR += py-formencode
     SUBDIR += py-frappe-bench
@@ -1717,6 +1716,7 @@
     SUBDIR += py-jsonfield
     SUBDIR += py-jswebkit
     SUBDIR += py-kallithea
+    SUBDIR += py-lesscpy
     SUBDIR += py-libsass
     SUBDIR += py-mechanize
     SUBDIR += py-meld

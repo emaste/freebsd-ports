@@ -2,6 +2,7 @@
 
 PORTNAME=	kodi
 DISTVERSION=	18.0.g20171213
+PORTREVISION=	1
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-devel
 
@@ -97,7 +98,7 @@ AVAHI_CMAKE_BOOL=	ENABLE_AVAHI
 CEC_LIB_DEPENDS=	libcec.so:multimedia/libcec
 CEC_CMAKE_BOOL=		ENABLE_CEC
 
-DBUS_LIB_DEPENDScd=	libdbus-1.so:devel/dbus
+DBUS_LIB_DEPENDS=	libdbus-1.so:devel/dbus
 DBUS_CMAKE_BOOL=	ENABLE_DBUS
 
 LIBBLURAY_LIB_DEPENDS=	libbluray.so:multimedia/libbluray

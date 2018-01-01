@@ -520,7 +520,6 @@ java/javel||2009-03-23|Has expired: unmaintained, does not work with current ver
 java/guavac||2009-03-23|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
 graphics/xrml||2009-03-23|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
 graphics/renderpark||2009-03-23|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
-games/jumpnbump||2009-03-23|Has expired: Tcl 8.0 support is going to be dropped
 irc/blackened||2009-03-23|Has expired: Broken and abandonware
 devel/libg++||2009-03-23|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
 devel/freescope||2009-03-23|Has expired: unmaintained, does not work with current versions of GCC, needs gcc295 which has been failing to build for months
@@ -7924,7 +7923,6 @@ cad/slffea||2015-11-28|Has expired: Broken for more than 6 months
 audio/cripple||2015-11-28|Has expired: Broken for more than 6 months
 cad/geda-gattrib||2015-11-28|Has expired: Broken for more than 6 months
 cad/findhier||2015-11-28|Has expired: Broken for more than 6 months
-audio/wmmp||2015-11-28|Has expired: Broken for more than 6 months
 x11/avant-window-navigator||2015-11-28|Has expired: Broken for more than 6 months
 cad/geda-netlist||2015-11-28|Has expired: Broken for more than 6 months
 deskutils/libopensync-plugin-sunbird||2015-11-28|Has expired: Broken for more than 6 months
@@ -9642,12 +9640,12 @@ www/linux-seamonkey||2017-11-22|Has expired: Use native www/seamonkey instead
 graphics/linux-adobesvg||2017-11-22|Has expired: not supported by linux-firefox 52 or later
 sysutils/qjail2||2017-11-26|Has expired: Only for FreeBSD 8 and 9, use sysutils/qjail[4] instead
 www/newsbeuter|www/newsboat|2017-11-27|Port was renamed
-devel/buildbot|devel/py-buildbot|2017-11-29|Rename to comply with PyPI scheme.
-devel/buildbot-console-view|devel/py-buildbot-console-view|2017-11-29|Rename to comply with PyPI scheme.
-devel/buildbot-pkg|devel/py-buildbot-pkg|2017-11-29|Rename to comply with PyPI scheme.
-devel/buildbot-waterfall-view|devel/py-buildbot-waterfall-view|2017-11-29|Rename to comply with PyPI scheme.
-devel/buildbot-worker|devel/py-buildbot-worker|2017-11-29|Rename to comply with PyPI scheme.
-devel/buildbot-www|devel/py-buildbot-www|2017-11-29|Rename to comply with PyPI scheme.
+devel/buildbot|devel/py-buildbot|2017-11-29|Rename to comply with PyPI scheme
+devel/buildbot-console-view|devel/py-buildbot-console-view|2017-11-29|Rename to comply with PyPI scheme
+devel/buildbot-pkg|devel/py-buildbot-pkg|2017-11-29|Rename to comply with PyPI scheme
+devel/buildbot-waterfall-view|devel/py-buildbot-waterfall-view|2017-11-29|Rename to comply with PyPI scheme
+devel/buildbot-worker|devel/py-buildbot-worker|2017-11-29|Rename to comply with PyPI scheme
+devel/buildbot-www|devel/py-buildbot-www|2017-11-29|Rename to comply with PyPI scheme
 emulators/ppsspp-devel|emulators/ppsspp|2017-11-29|Out of date: use emulators/ppsspp for now
 audio/shairport|audio/shairport-sync|2017-11-29|Has expired: Officially unmaintained upstream. Use audio/shairport-sync instead
 accessibility/py3-speech-dispatcher|accessibility/py-speech-dispatcher@py36|2017-11-30|Moved to a flavored, generic, version
@@ -9801,7 +9799,7 @@ security/webshag||2017-12-01|Has expired: Abandoned
 www/p5-Yahoo-Lifestyle||2017-12-01|Has expired: This service has been shut down
 games/linux-rtcw|games/iortcw|2017-12-01|Has expired: Use the native and open source games/iortcw instead
 java/bootstrap-openjdk|java/bootstrap-openjdk6|2017-12-01|Has expired: superseded by java/bootstrap-openjdk[68]
-lang/gcc46|lang/gcc6|2017-12-01|Has expired: Unsupported by upstream. Use GCC 6 or newer instead.
+lang/gcc46|lang/gcc6|2017-12-01|Has expired: Unsupported by upstream. Use GCC 6 or newer instead
 security/krb5-113|security/krb5-114|2017-12-03|Has expired: EOL twelve months after release of krb5-1.15
 net/bird6|net/bird@ipv6|2017-12-06|Moved to a flavored version
 devel/kore-notls|devel/kore@notls|2017-12-06|Moved to a flavored version
@@ -9822,3 +9820,21 @@ devel/android-tools-adb-devel|devel/android-tools-adb|2017-12-20|Out of date: us
 devel/android-tools-fastboot-devel|devel/android-tools-fastboot|2017-12-20|Out of date: use devel/android-tools-fastboot for now
 math/petsc|science/PETSc|2017-12-20|Recreated after it has been deleted in r366959 on 2014-09-01
 math/petsc-mpich|science/PETSc|2017-12-20|Recreated after it has been deleted in r321243 on 2013-06-19 (it was a slave port)
+textproc/py-elasticsearch-py|textproc/py-elasticsearch|2017-12-21|Rename to match PyPI naming
+japanese/egg-canna||2017-12-25|Has expired: Requires Emacs versions before 23
+editors/tree-widget||2017-12-26|Has expired: Now part of Emacs
+www/py-flup|www/py-flup6|2017-12-26|forked, for py3k support
+net/openh323||2017-12-27|Abandoned in 2007, continued as net/h323plus
+net/ohphone||2017-12-27|Part of OpenH323 project, abandoned in 2007
+devel/pwlib||2017-12-27|Part of OpenH323 project, abandoned in 2007, continued as devel/ptlib
+deskutils/etask||2017-12-27|Has expired: Unsupported by upstream since 2007
+misc/p5-Asterisk|misc/p5-asterisk-perl|2017-12-29|Rename to match upstream naming
+www/npm2|www/npm|2017-12-31|Has expired: use www/npm or www/npm-node* instead
+www/npm3|www/npm|2017-12-31|Has expired: use www/npm or www/npm-node* instead
+net/rubygem-fog-aws0|net/rubygem-fog-aws|2017-12-31|Has expired: use net/rubygem-fog-aws or net/rubygem-fog-aws1 instead
+net-mgmt/nrpe|net-mgmt/nrpe3|2018-01-01|nrpe 2.0 not maintained, use nrpe 3.0
+net-mgmt/nrpe-ssl|net-mgmt/nrpe3|2018-01-01|nrpe 2.0 not maintained, use nrpe 3.0
+security/gnupg20|security/gnupg|2018-01-01|Has expired: Will reach EOL upstream on 2017-12-31
+dns/dualserver|dns/dnsmasq|2018-01-01|Has expired: Please migrate to dns/dnsmasq. Over the years dualserver becomes unmaintenaible.
+devel/p5-Parse-Pidl44|devel/p5-Parse-Pidl|2018-01-01|Has expired: use devel/p5-Parse-Pidl instead
+sysutils/DTraceToolkit||2018-01-01|Has expired: Now maintained as part of the base system

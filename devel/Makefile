@@ -3126,7 +3126,6 @@
     SUBDIR += p5-Parse-PMFile
     SUBDIR += p5-Parse-PerlConfig
     SUBDIR += p5-Parse-Pidl
-    SUBDIR += p5-Parse-Pidl44
     SUBDIR += p5-Parse-PlainConfig
     SUBDIR += p5-Parse-RecDescent
     SUBDIR += p5-Parse-Win32Registry
@@ -3182,6 +3181,7 @@
     SUBDIR += p5-Pipeline
     SUBDIR += p5-Pithub
     SUBDIR += p5-PkgConfig
+    SUBDIR += p5-PkgConfig-LibPkgConf
     SUBDIR += p5-Pod-Coverage
     SUBDIR += p5-Pod-Coverage-Moose
     SUBDIR += p5-Pod-Coverage-TrustPod
@@ -4129,7 +4129,6 @@
     SUBDIR += pure-stldict
     SUBDIR += pure-stllib
     SUBDIR += pushmi
-    SUBDIR += pwlib
     SUBDIR += py-Acquisition
     SUBDIR += py-AddOns
     SUBDIR += py-Automat
@@ -4138,6 +4137,7 @@
     SUBDIR += py-DateTime
     SUBDIR += py-DocumentTemplate
     SUBDIR += py-ExtensionClass
+    SUBDIR += py-Faker
     SUBDIR += py-IBMQuantumExperience
     SUBDIR += py-InlineEgg
     SUBDIR += py-Jinja2
@@ -4235,6 +4235,7 @@
     SUBDIR += py-anyjson
     SUBDIR += py-apache_conf_parser
     SUBDIR += py-apipkg
+    SUBDIR += py-apns2
     SUBDIR += py-appdirs
     SUBDIR += py-application
     SUBDIR += py-apptools
@@ -4373,6 +4374,7 @@
     SUBDIR += py-delfick_error
     SUBDIR += py-deliciousapi
     SUBDIR += py-demjson
+    SUBDIR += py-deprecation
     SUBDIR += py-dexml
     SUBDIR += py-dialog
     SUBDIR += py-diazo
@@ -4394,6 +4396,7 @@
     SUBDIR += py-efilter
     SUBDIR += py-efl
     SUBDIR += py-eggtestinfo
+    SUBDIR += py-ejson
     SUBDIR += py-entrypoints
     SUBDIR += py-enum-compat
     SUBDIR += py-enum34
@@ -4407,7 +4410,6 @@
     SUBDIR += py-ezpyinline
     SUBDIR += py-fabric
     SUBDIR += py-fabric3
-    SUBDIR += py-fake-factory
     SUBDIR += py-fam
     SUBDIR += py-fasteners
     SUBDIR += py-fastentrypoints
@@ -4720,6 +4722,7 @@
     SUBDIR += py-pyelftools
     SUBDIR += py-pyev
     SUBDIR += py-pyface
+    SUBDIR += py-pyfcm
     SUBDIR += py-pyflakes
     SUBDIR += py-pygdbmi
     SUBDIR += py-pygit2
@@ -4973,6 +4976,7 @@
     SUBDIR += py-venusian
     SUBDIR += py-verboselogs
     SUBDIR += py-versiontools
+    SUBDIR += py-vine
     SUBDIR += py-virtualenv
     SUBDIR += py-virtualenv-clone
     SUBDIR += py-virtualenvwrapper
@@ -5450,6 +5454,7 @@
     SUBDIR += rubygem-google-api-client
     SUBDIR += rubygem-google-api-client010
     SUBDIR += rubygem-google-protobuf
+    SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
     SUBDIR += rubygem-grape
     SUBDIR += rubygem-grape-entity
