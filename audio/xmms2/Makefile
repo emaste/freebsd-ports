@@ -28,8 +28,6 @@ PLIST_SUB+=	INCLUDEDIR="include/${PORTNAME}" LIBDIR="lib/${PORTNAME}"
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 
-BROKEN_aarch64=		Fails to compile: error in backend: Do not know how to split this operator's operand!
-
 OPTIONS_DEFINE=	AIRPLAY AO APE AVCODEC CDDA CURL ET FAAD FAM FLAC \
 		GME GVFS ICES JACK MAD MDNS MMS \
 		MODPLUG MPG123 MUSEPACK PULSEAUDIO SAMBA SID \
@@ -160,7 +158,7 @@ XML_CONFIGURE_OFF=	--without-plugins="xml" --without-plugins="rss" \
 
 ET_CONFIGURE_OFF=	--without-optionals="et"
 
-.endif # !XMMS_SLAVE
+.endif # !XMMS2_SLAVE
 
 .include <bsd.port.options.mk>
 
@@ -219,6 +217,8 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/*
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/${PORTNAME}/*
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libxmmsclient*
+.else
+	${RM} -R ${STAGEDIR}${PREFIX}/lib/xmms2
 .endif
 
 .include <bsd.port.post.mk>

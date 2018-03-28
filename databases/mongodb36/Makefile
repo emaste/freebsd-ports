@@ -2,7 +2,7 @@
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
-DISTVERSION=	3.6.0
+DISTVERSION=	3.6.3
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://fastdl.mongodb.org/src/ \
@@ -10,7 +10,7 @@ MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}
 DISTNAME=	mongodb-src-${DISTVERSIONPREFIX}${DISTVERSION}
 
-MAINTAINER=	galu@packetdam.com
+MAINTAINER=	dev@dudu.ro
 COMMENT=	Distributed document-oriented "NoSQL" database
 
 # mongodb is AGPLv3, C++ driver is APACHE20
@@ -19,22 +19,23 @@ LICENSE_COMB=	multi
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only supported on amd64 (i386 deprecated in v3)"
+BROKEN_FreeBSD_10=	libc++ is too old
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}typing>=3.6.2:devel/py-typing@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cheetah>=2.4.4:devel/py-cheetah@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=2.4.4:devel/py-cheetah@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}typing>=3.6.2:devel/py-typing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR}
-LIB_DEPENDS=	libpcre.so:devel/pcre \
-		libsnappy.so:archivers/snappy \
-		libboost_system.so:devel/boost-libs
+LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
+		libpcre.so:devel/pcre \
+		libsnappy.so:archivers/snappy
 
 CONFLICTS_BUILD=	mongo-cxx-driver
 CONFLICTS_INSTALL=	mongodb[32-4]*
 
-USES=		compiler:c++14-lang cpe python:build scons shebangfix
+USES=		compiler:c++14-lang cpe python:2.7,build scons shebangfix
 USE_RC_SUBR=	mongod
 
 SHEBANG_FILES=	src/mongo/installer/compass/install_compass.in
-
+python_OLD_CMD=	@python_interpreter@
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \
 		--use-system-pcre --use-system-snappy \
 		--use-system-boost --use-system-zlib \

@@ -3,6 +3,7 @@
 
 PORTNAME=	gnucash
 PORTVERSION=	2.6.19
+PORTREVISION=	2
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%29/${PORTVERSION}
 
@@ -22,6 +23,8 @@ LIB_DEPENDS=	libgnome-keyring.so:security/libgnome-keyring \
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-Date-Manip>=0:devel/p5-Date-Manip \
 		p5-Finance-Quote>=0:finance/p5-Finance-Quote
+
+PORTSCOUT=	 limitw:1,even
 
 FLAVORS=		guile2 guile1
 
@@ -100,7 +103,7 @@ GLIB_SCHEMAS=	org.gnucash.dialogs.business.gschema.xml \
 .if ${FLAVOR:U} == guile1
 CONFIGURE_ARGS+=	--with-guile=1.8
 PLIST_SUB+=		GUILE2="@comment "
-.elif ${FLAVOR:U} == guile2
+.elif ${FLAVOR:U${FLAVORS:[1]}} == guile2
 CONFIGURE_ARGS+=	--with-guile=2.0
 PLIST_SUB+=		GUILE2=""
 .endif
