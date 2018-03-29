@@ -22,6 +22,7 @@ LLD_UNSAFE=	yes
 CONFIGURE_ARGS+=--with-tcllib=${LOCALBASE}/lib/libtcl${TCL_SHLIB_VER}.so \
 		--with-tclinc=${LOCALBASE}/include/tcl${TCL_VER}/tcl.h
 MAKE_JOBS_UNSAFE=	yes
+LLD_UNSAFE=	yes
 
 SUB_FILES=	pkg-message
 PORTDOCS=	*
