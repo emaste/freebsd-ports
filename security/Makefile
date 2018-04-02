@@ -310,6 +310,7 @@
     SUBDIR += knocker
     SUBDIR += kpcli
     SUBDIR += kqoauth
+    SUBDIR += kr
     SUBDIR += krb5
     SUBDIR += krb5-114
     SUBDIR += krb5-115
@@ -480,6 +481,7 @@
     SUBDIR += osslsigncode
     SUBDIR += otpw
     SUBDIR += outguess
+    SUBDIR += owasp-dependency-check
     SUBDIR += p11-kit
     SUBDIR += p5-Apache-Htpasswd
     SUBDIR += p5-App-Genpass
@@ -1152,7 +1154,6 @@
     SUBDIR += rubygem-rex-zip
     SUBDIR += rubygem-roauth
     SUBDIR += rubygem-rpam2
-    SUBDIR += rubygem-rpam2-3
     SUBDIR += rubygem-ruby-hmac
     SUBDIR += rubygem-ruby-rc4
     SUBDIR += rubygem-ruby-saml

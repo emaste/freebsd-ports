@@ -176,6 +176,7 @@
     SUBDIR += en-hunspell
     SUBDIR += en-mythes
     SUBDIR += enchant
+    SUBDIR += enchant2
     SUBDIR += eo-aspell
     SUBDIR += eqe
     SUBDIR += erlang-edown
@@ -1509,7 +1510,6 @@
     SUBDIR += rubygem-escape_utils-rails4
     SUBDIR += rubygem-ezamar
     SUBDIR += rubygem-fast_xs
-    SUBDIR += rubygem-fast_xs073
     SUBDIR += rubygem-ferret
     SUBDIR += rubygem-fog-xml
     SUBDIR += rubygem-gemoji

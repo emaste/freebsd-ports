@@ -168,6 +168,7 @@
     SUBDIR += py-mlpy
     SUBDIR += py-netCDF4
     SUBDIR += py-obspy
+    SUBDIR += py-openpiv
     SUBDIR += py-paida
     SUBDIR += py-pupynere
     SUBDIR += py-pyaixi
@@ -178,6 +179,7 @@
     SUBDIR += py-pyteomics
     SUBDIR += py-pyteomics.biolccc
     SUBDIR += py-qspin
+    SUBDIR += py-quantities
     SUBDIR += py-scikit-fuzzy
     SUBDIR += py-scikit-learn
     SUBDIR += py-scikit-sparse

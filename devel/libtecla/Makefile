@@ -19,6 +19,7 @@ USE_LDCONFIG=	yes
 LLD_UNSAFE=	yes
 MAKE_JOBS_UNSAFE=	yes
 SSP_UNSAFE=	yes
+LLD_UNSAFE=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,^OPT = -O,OPT =,' \
