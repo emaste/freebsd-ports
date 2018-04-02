@@ -26,7 +26,6 @@ ONLY_FOR_ARCHS=	i386 amd64
 LLD_UNSAFE=	yes	# Links object with invalid section header alignment
 BOOTVER=	3.0.4
 MANVER=		3.0.4
-LLD_UNSAFE=	yes
 
 #USE_GITHUB=	yes
 #GH_ACCOUNT=	fpc-svn
