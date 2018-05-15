@@ -24,6 +24,7 @@
     SUBDIR += R-cran-udunits2
     SUBDIR += afni
     SUBDIR += aircraft-datcom
+    SUBDIR += antioch
     SUBDIR += avogadro
     SUBDIR += bddsolve
     SUBDIR += bft
@@ -46,6 +47,7 @@
     SUBDIR += dcl
     SUBDIR += devisor
     SUBDIR += dkh
+    SUBDIR += dlib-cpp
     SUBDIR += dlpoly-classic
     SUBDIR += ecs
     SUBDIR += epte
@@ -53,6 +55,7 @@
     SUBDIR += fastcap
     SUBDIR += fasthenry
     SUBDIR += fisicalab
+    SUBDIR += fsom
     SUBDIR += fvcom
     SUBDIR += fvcom-mpi
     SUBDIR += fvm
@@ -78,6 +81,7 @@
     SUBDIR += iboview
     SUBDIR += isaac-cfd
     SUBDIR += jstrack
+    SUBDIR += kalzium
     SUBDIR += kalzium-kde4
     SUBDIR += kst2
     SUBDIR += lamprop
@@ -101,10 +105,12 @@
     SUBDIR += mcstas
     SUBDIR += mcstas-comps
     SUBDIR += mcxtrace
+    SUBDIR += mcxtrace-comps
     SUBDIR += medit
     SUBDIR += meep
     SUBDIR += mei
     SUBDIR += metaf2xml
+    SUBDIR += metaphysicl
     SUBDIR += minc2
     SUBDIR += mol2ps
     SUBDIR += mpb
@@ -159,13 +165,18 @@
     SUBDIR += psychopy
     SUBDIR += pulseview
     SUBDIR += py-DendroPy
+    SUBDIR += py-MDAnalysis
+    SUBDIR += py-MDAnalysisTests
     SUBDIR += py-OpenFermion
     SUBDIR += py-cdo
     SUBDIR += py-coards
+    SUBDIR += py-dlib
+    SUBDIR += py-gsd
     SUBDIR += py-h5py
     SUBDIR += py-hcluster
     SUBDIR += py-mdp
     SUBDIR += py-mlpy
+    SUBDIR += py-mmtf-python
     SUBDIR += py-netCDF4
     SUBDIR += py-obspy
     SUBDIR += py-openpiv
@@ -197,6 +208,10 @@
     SUBDIR += rdkit
     SUBDIR += rubygem-ai4r
     SUBDIR += rubygem-cdo
+    SUBDIR += rubygem-rgeo
+    SUBDIR += rubygem-rgeo-geojson
+    SUBDIR += rubygem-rgeo-proj4
+    SUBDIR += rubygem-rgeo-shapefile
     SUBDIR += rubygem-ruby-dcl
     SUBDIR += rubygem-ruby-netcdf
     SUBDIR += sigrok-cli
@@ -206,6 +221,7 @@
     SUBDIR += silo
     SUBDIR += simlib
     SUBDIR += simsmith
+    SUBDIR += step
     SUBDIR += step-kde4
     SUBDIR += svmlight
     SUBDIR += szip

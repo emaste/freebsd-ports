@@ -51,6 +51,7 @@
     SUBDIR += augeas
     SUBDIR += az-aspell
     SUBDIR += bar
+    SUBDIR += bat
     SUBDIR += bbe
     SUBDIR += be-aspell
     SUBDIR += bedic-data
@@ -70,6 +71,7 @@
     SUBDIR += bsdsort
     SUBDIR += btparse
     SUBDIR += c2html
+    SUBDIR += c2man
     SUBDIR += ca-aspell
     SUBDIR += catdoc
     SUBDIR += cdif
@@ -151,13 +153,7 @@
     SUBDIR += ekhtml
     SUBDIR += el-aspell
     SUBDIR += el-hyphen
-    SUBDIR += elasticsearch
     SUBDIR += elasticsearch-plugin-head
-    SUBDIR += elasticsearch-plugin-hq
-    SUBDIR += elasticsearch-plugin-marvel
-    SUBDIR += elasticsearch-plugin-migration
-    SUBDIR += elasticsearch-plugin-sql
-    SUBDIR += elasticsearch-river-rabbitmq
     SUBDIR += elasticsearch2
     SUBDIR += elasticsearch2-plugin-hq
     SUBDIR += elasticsearch2-plugin-marvel
@@ -165,7 +161,6 @@
     SUBDIR += elasticsearch2-plugin-sql
     SUBDIR += elasticsearch5
     SUBDIR += elasticsearch5-search-guard
-    SUBDIR += elasticsearch5-x-pack
     SUBDIR += elasticsearch6
     SUBDIR += elixir-earmark
     SUBDIR += elixir-ex_doc
@@ -389,7 +384,6 @@
     SUBDIR += kibana46
     SUBDIR += kibana5
     SUBDIR += kibana5-search-guard
-    SUBDIR += kibana5-x-pack
     SUBDIR += kibana6
     SUBDIR += kiss-templates
     SUBDIR += kmfl-european-latin
@@ -402,6 +396,7 @@
     SUBDIR += kmfl-varamozhi-malayalam
     SUBDIR += kmflcomp
     SUBDIR += kn-aspell
+    SUBDIR += kompare
     SUBDIR += kompare-kde4
     SUBDIR += kreport
     SUBDIR += ku-aspell
@@ -429,6 +424,7 @@
     SUBDIR += libguess
     SUBDIR += libkmfl
     SUBDIR += libkolabxml
+    SUBDIR += libkomparediff2
     SUBDIR += libkomparediff2-kde4
     SUBDIR += liblingoteach
     SUBDIR += liblrdf
@@ -608,6 +604,7 @@
     SUBDIR += p5-HTML-SuperForm
     SUBDIR += p5-HTML-TagFilter
     SUBDIR += p5-HTML-Tidy
+    SUBDIR += p5-HTML-Tidy5
     SUBDIR += p5-HTML-Tiny
     SUBDIR += p5-HTML-Truncate
     SUBDIR += p5-Hailo
@@ -802,7 +799,6 @@
     SUBDIR += p5-Sphinx-Config
     SUBDIR += p5-Sphinx-Manager
     SUBDIR += p5-Sphinx-Search
-    SUBDIR += p5-Spork
     SUBDIR += p5-Spreadsheet-ParseExcel
     SUBDIR += p5-Spreadsheet-Read
     SUBDIR += p5-Spreadsheet-ReadSXC
@@ -1283,6 +1279,8 @@
     SUBDIR += py-bibtexparser
     SUBDIR += py-bugzillatools
     SUBDIR += py-chardet
+    SUBDIR += py-citeproc-py
+    SUBDIR += py-citeproc-py-styles
     SUBDIR += py-cjkwrap
     SUBDIR += py-cloud_sptheme
     SUBDIR += py-colorclass
@@ -1292,8 +1290,12 @@
     SUBDIR += py-diff-match-patch
     SUBDIR += py-docutils
     SUBDIR += py-dsv
+    SUBDIR += py-duecredit
     SUBDIR += py-elasticsearch
-    SUBDIR += py-elasticsearch-curator-py
+    SUBDIR += py-elasticsearch-async
+    SUBDIR += py-elasticsearch5
+    SUBDIR += py-elasticsearch-curator
+    SUBDIR += py-elasticsearch-dsl
     SUBDIR += py-elasticsearch-dsl-py
     SUBDIR += py-elasticsearch2-dsl-py
     SUBDIR += py-elib.intl
@@ -1326,6 +1328,8 @@
     SUBDIR += py-markdown
     SUBDIR += py-markdown2
     SUBDIR += py-mistune
+    SUBDIR += py-mkdocs
+    SUBDIR += py-mkdocs-nature
     SUBDIR += py-mwparserfromhell
     SUBDIR += py-nltk
     SUBDIR += py-numpydoc
@@ -1368,6 +1372,7 @@
     SUBDIR += py-rdflib
     SUBDIR += py-regex
     SUBDIR += py-reverend
+    SUBDIR += py-rnc2rng
     SUBDIR += py-rss2gen
     SUBDIR += py-rst2html5
     SUBDIR += py-rstyoutube
@@ -1392,6 +1397,7 @@
     SUBDIR += py-stemming
     SUBDIR += py-syck
     SUBDIR += py-tabletext
+    SUBDIR += py-tablib
     SUBDIR += py-terminaltables
     SUBDIR += py-textfsm
     SUBDIR += py-texttable
@@ -1446,6 +1452,7 @@
     SUBDIR += redland-bindings
     SUBDIR += refdb
     SUBDIR += reflex
+    SUBDIR += regex2dfa
     SUBDIR += replaceit
     SUBDIR += resume
     SUBDIR += resume-extensions
@@ -1509,7 +1516,6 @@
     SUBDIR += rubygem-emot
     SUBDIR += rubygem-escape_utils
     SUBDIR += rubygem-escape_utils11
-    SUBDIR += rubygem-escape_utils-rails4
     SUBDIR += rubygem-ezamar
     SUBDIR += rubygem-fast_xs
     SUBDIR += rubygem-ferret
@@ -1518,6 +1524,7 @@
     SUBDIR += rubygem-gherkin
     SUBDIR += rubygem-github-linguist
     SUBDIR += rubygem-github-linguist47
+    SUBDIR += rubygem-github-linguist53
     SUBDIR += rubygem-github-markup
     SUBDIR += rubygem-gitlab-grit
     SUBDIR += rubygem-gitlab-linguist
@@ -1579,6 +1586,7 @@
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-ri_cal
     SUBDIR += rubygem-rich
+    SUBDIR += rubygem-rly
     SUBDIR += rubygem-rmmseg-cpp
     SUBDIR += rubygem-ronn
     SUBDIR += rubygem-rouge
