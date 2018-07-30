@@ -138,6 +138,7 @@
     SUBDIR += derelict-gl3
     SUBDIR += devil
     SUBDIR += dia
+    SUBDIR += diff-pdf
     SUBDIR += diffpdf
     SUBDIR += digikam
     SUBDIR += digikam-kde4
@@ -148,9 +149,11 @@
     SUBDIR += djview4
     SUBDIR += djview4-qt4
     SUBDIR += djvulibre
+    SUBDIR += djvusmooth
     SUBDIR += dmtx-utils
     SUBDIR += drawpile
     SUBDIR += driconf
+    SUBDIR += drm-devel-kmod
     SUBDIR += drm-next-kmod
     SUBDIR += drm-stable-kmod
     SUBDIR += dspdfviewer
@@ -161,6 +164,7 @@
     SUBDIR += electrix
     SUBDIR += embree
     SUBDIR += enblend
+    SUBDIR += engauge-digitizer
     SUBDIR += entangle
     SUBDIR += eog
     SUBDIR += eog-plugins
@@ -282,6 +286,7 @@
     SUBDIR += glosm
     SUBDIR += glpng
     SUBDIR += gltt
+    SUBDIR += gmic
     SUBDIR += gmic-qt
     SUBDIR += gmt
     SUBDIR += gnash
@@ -302,6 +307,7 @@
     SUBDIR += gpicview
     SUBDIR += gpsmanshp
     SUBDIR += gpu-firmware-kmod
+    SUBDIR += gpxsee
     SUBDIR += gracula
     SUBDIR += grads
     SUBDIR += grafx2
@@ -351,7 +357,6 @@
     SUBDIR += hiptext
     SUBDIR += hobbes-icons-xpm
     SUBDIR += hppsmtools
-    SUBDIR += hs-HGL
     SUBDIR += hs-JuicyPixels
     SUBDIR += hs-cairo
     SUBDIR += hs-dia-base
@@ -535,7 +540,6 @@
     SUBDIR += libkdcraw-kde4
     SUBDIR += libkexiv2
     SUBDIR += libkexiv2-kde4
-    SUBDIR += libkface
     SUBDIR += libkipi
     SUBDIR += libkipi-kde4
     SUBDIR += libkipiplugins
@@ -554,6 +558,7 @@
     SUBDIR += libpano13
     SUBDIR += libpcd
     SUBDIR += libpgf
+    SUBDIR += libpillowfight
     SUBDIR += libpotrace
     SUBDIR += libprojectm
     SUBDIR += libpuzzle
@@ -626,7 +631,6 @@
     SUBDIR += mhgui
     SUBDIR += ming
     SUBDIR += mirage
-    SUBDIR += mitsuba
     SUBDIR += mmrecover
     SUBDIR += movit
     SUBDIR += mozjpeg
@@ -756,13 +760,12 @@
     SUBDIR += p5-Image-ObjectDetect
     SUBDIR += p5-Image-PBMlib
     SUBDIR += p5-Image-PNG-Libpng
+    SUBDIR += p5-Image-PNG-QRCode
     SUBDIR += p5-Image-Pngslimmer
     SUBDIR += p5-Image-Sane
     SUBDIR += p5-Image-Scale
     SUBDIR += p5-Image-Size
-    SUBDIR += p5-Image-Size-FillFullSelect
     SUBDIR += p5-Imager
-    SUBDIR += p5-Imager-AverageGray
     SUBDIR += p5-Imager-Graph
     SUBDIR += p5-Imager-Plot
     SUBDIR += p5-Imager-QRCode
@@ -870,7 +873,6 @@
     SUBDIR += prison
     SUBDIR += processing
     SUBDIR += proj
-    SUBDIR += projectm-libvisual
     SUBDIR += pstoedit
     SUBDIR += pstoepsi
     SUBDIR += ptex
@@ -883,6 +885,7 @@
     SUBDIR += py-blockdiagcontrib-cisco
     SUBDIR += py-cairo
     SUBDIR += py-cairocffi
+    SUBDIR += py-cartopy
     SUBDIR += py-chart
     SUBDIR += py-django-easy-thumbnails
     SUBDIR += py-djvulibre
@@ -890,9 +893,11 @@
     SUBDIR += py-exif
     SUBDIR += py-exifread
     SUBDIR += py-exiv2
+    SUBDIR += py-fiona
     SUBDIR += py-freeimagepy
     SUBDIR += py-gd
     SUBDIR += py-gdal
+    SUBDIR += py-geopandas
     SUBDIR += py-gimp
     SUBDIR += py-gizeh
     SUBDIR += py-glewpy
@@ -914,6 +919,7 @@
     SUBDIR += py-opencv
     SUBDIR += py-openexr
     SUBDIR += py-openimageio
+    SUBDIR += py-OWSLib
     SUBDIR += py-paint
     SUBDIR += py-photocollage
     SUBDIR += py-pillow
@@ -931,7 +937,11 @@
     SUBDIR += py-pyglet
     SUBDIR += py-pygooglechart
     SUBDIR += py-pygraphviz
+    SUBDIR += py-pyinsane2
+    SUBDIR += py-pyocr
+    SUBDIR += py-pypillowfight
     SUBDIR += py-pyproj
+    SUBDIR += py-pyqtgraph
     SUBDIR += py-qt4-svg
     SUBDIR += py-qt5-svg
     SUBDIR += py-sane
@@ -941,6 +951,8 @@
     SUBDIR += py-sorl-thumbnail
     SUBDIR += py-soya3d
     SUBDIR += py-stltools
+    SUBDIR += py-svgwrite
+    SUBDIR += py-termtosvg
     SUBDIR += py-toyplot
     SUBDIR += py-traitsui
     SUBDIR += py-wand
@@ -1000,6 +1012,7 @@
     SUBDIR += rubygem-gd2
     SUBDIR += rubygem-gdk_pixbuf2
     SUBDIR += rubygem-gemojione
+    SUBDIR += rubygem-gemojione32
     SUBDIR += rubygem-geokit
     SUBDIR += rubygem-gitlab_emoji
     SUBDIR += rubygem-goocanvas
@@ -1050,6 +1063,7 @@
     SUBDIR += simage
     SUBDIR += simpleviewer
     SUBDIR += sk1libs
+    SUBDIR += skanlite
     SUBDIR += skanlite-kde4
     SUBDIR += smillaenlarger
     SUBDIR += spectacle
@@ -1143,7 +1157,7 @@
     SUBDIR += xv
     SUBDIR += xv-m17n
     SUBDIR += xwpick
-    SUBDIR += yafray
+    SUBDIR += yafaray
     SUBDIR += yagf
     SUBDIR += yed
     SUBDIR += yukon

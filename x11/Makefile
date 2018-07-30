@@ -6,6 +6,7 @@
     SUBDIR += 3ddesktop
     SUBDIR += 9box
     SUBDIR += 9menu
+    SUBDIR += admiral
     SUBDIR += alacritty
     SUBDIR += alltray
     SUBDIR += alttab
@@ -28,6 +29,7 @@
     SUBDIR += bmpanel2
     SUBDIR += bricons
     SUBDIR += brightside
+    SUBDIR += brisk-menu
     SUBDIR += cinnamon
     SUBDIR += cinnamon-desktop
     SUBDIR += cinnamon-menus
@@ -61,7 +63,6 @@
     SUBDIR += eaglemode
     SUBDIR += editres
     SUBDIR += emprint
-    SUBDIR += enventor
     SUBDIR += erun
     SUBDIR += eterm
     SUBDIR += evieext
@@ -226,6 +227,8 @@
     SUBDIR += lxhotkey
     SUBDIR += lxmenu-data
     SUBDIR += lxpanel
+    SUBDIR += lxqt-globalkeys
+    SUBDIR += lxqt-globalkeys-l10n
     SUBDIR += lxqt-l10n
     SUBDIR += lxrandr
     SUBDIR += mate
@@ -238,6 +241,7 @@
     SUBDIR += mate-session-manager
     SUBDIR += mate-terminal
     SUBDIR += menu-cache
+    SUBDIR += menulibre
     SUBDIR += metalock
     SUBDIR += metisse
     SUBDIR += mkcomposecache
@@ -365,6 +369,7 @@
     SUBDIR += wmctrl
     SUBDIR += wmdrawer
     SUBDIR += wmmatrix
+    SUBDIR += wmsystemtray
     SUBDIR += wmutils-core
     SUBDIR += wmutils-opt
     SUBDIR += wmxss
@@ -499,6 +504,7 @@
     SUBDIR += xpr
     SUBDIR += xpra
     SUBDIR += xprehashprinterlist
+    SUBDIR += xprintidle
     SUBDIR += xprompt
     SUBDIR += xprop
     SUBDIR += xproto
@@ -512,6 +518,7 @@
     SUBDIR += xrsh
     SUBDIR += xrsi
     SUBDIR += xrx
+    SUBDIR += xscope
     SUBDIR += xscreensaver
     SUBDIR += xscreensaver-gnome
     SUBDIR += xscreensaver-gnome-hacks

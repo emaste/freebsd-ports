@@ -251,6 +251,7 @@
     SUBDIR += hs-cryptohash-sha1
     SUBDIR += hs-cryptohash-sha256
     SUBDIR += hs-cryptonite
+    SUBDIR += hs-cryptonite-conduit
     SUBDIR += hs-digest
     SUBDIR += hs-ed25519
     SUBDIR += hs-entropy
@@ -292,6 +293,7 @@
     SUBDIR += john
     SUBDIR += kbfs
     SUBDIR += kc
+    SUBDIR += kc24
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
@@ -308,6 +310,7 @@
     SUBDIR += kgpg
     SUBDIR += kgpg-kde4
     SUBDIR += kickpass
+    SUBDIR += klee
     SUBDIR += kleopatra
     SUBDIR += knock
     SUBDIR += knocker
@@ -911,13 +914,18 @@
     SUBDIR += py-certbot-dns-digitalocean
     SUBDIR += py-certbot-dns-dnsimple
     SUBDIR += py-certbot-dns-dnsmadeeasy
+    SUBDIR += py-certbot-dns-gehirn
     SUBDIR += py-certbot-dns-google
+    SUBDIR += py-certbot-dns-linode
     SUBDIR += py-certbot-dns-luadns
     SUBDIR += py-certbot-dns-nsone
+    SUBDIR += py-certbot-dns-ovh
     SUBDIR += py-certbot-dns-rfc2136
     SUBDIR += py-certbot-dns-route53
+    SUBDIR += py-certbot-dns-sakuracloud
     SUBDIR += py-certbot-nginx
     SUBDIR += py-certifi
+    SUBDIR += py-certstream
     SUBDIR += py-cpe
     SUBDIR += py-cracklib
     SUBDIR += py-cryptkit
@@ -932,15 +940,19 @@
     SUBDIR += py-ed25519ll
     SUBDIR += py-fail2ban
     SUBDIR += py-fchksum
+    SUBDIR += py-fido2
     SUBDIR += py-first-server
     SUBDIR += py-flask-httpauth
     SUBDIR += py-flask-kerberos
+    SUBDIR += py-flask-saml
+    SUBDIR += py-fteproxy
     SUBDIR += py-gixy
     SUBDIR += py-gnupg
     SUBDIR += py-gnutls
     SUBDIR += py-google-auth
     SUBDIR += py-gpgme
     SUBDIR += py-gpsoauth
+    SUBDIR += py-gssapi
     SUBDIR += py-halberd
     SUBDIR += py-hkdf
     SUBDIR += py-htpasswd
@@ -985,6 +997,7 @@
     SUBDIR += py-pyclamd
     SUBDIR += py-pycrypto
     SUBDIR += py-pycryptodome
+    SUBDIR += py-pycryptodomex
     SUBDIR += py-pycryptopp
     SUBDIR += py-pydeep
     SUBDIR += py-pyelliptic
@@ -997,6 +1010,7 @@
     SUBDIR += py-pyscard
     SUBDIR += py-pysha3
     SUBDIR += py-python-gnupg
+    SUBDIR += py-python-jose
     SUBDIR += py-python-nss
     SUBDIR += py-python-openid
     SUBDIR += py-python-registry
@@ -1005,6 +1019,7 @@
     SUBDIR += py-pywinrm
     SUBDIR += py-rekall
     SUBDIR += py-rekall-core
+    SUBDIR += py-rekall_lib
     SUBDIR += py-requests-credssp
     SUBDIR += py-requests-kerberos
     SUBDIR += py-rsa
@@ -1085,7 +1100,6 @@
     SUBDIR += rubygem-aes_key_wrap
     SUBDIR += rubygem-airbrussh
     SUBDIR += rubygem-attr_encrypted
-    SUBDIR += rubygem-attr_encrypted30
     SUBDIR += rubygem-bcrypt
     SUBDIR += rubygem-bcrypt-ruby
     SUBDIR += rubygem-bcrypt_pbkdf
@@ -1095,11 +1109,10 @@
     SUBDIR += rubygem-devise-two-factor-rails50
     SUBDIR += rubygem-digest-crc
     SUBDIR += rubygem-doorkeeper
-    SUBDIR += rubygem-doorkeeper42
     SUBDIR += rubygem-doorkeeper-openid_connect
-    SUBDIR += rubygem-doorkeeper-openid_connect12
     SUBDIR += rubygem-doorkeeper-rails5
     SUBDIR += rubygem-doorkeeper-rails50
+    SUBDIR += rubygem-ed25519
     SUBDIR += rubygem-encryptor
     SUBDIR += rubygem-ezcrypto
     SUBDIR += rubygem-googleauth
@@ -1118,7 +1131,7 @@
     SUBDIR += rubygem-net-scp
     SUBDIR += rubygem-net-sftp
     SUBDIR += rubygem-net-ssh
-    SUBDIR += rubygem-net-ssh41
+    SUBDIR += rubygem-net-ssh4
     SUBDIR += rubygem-net-ssh-gateway
     SUBDIR += rubygem-net-ssh-gateway1
     SUBDIR += rubygem-net-ssh-multi
@@ -1126,7 +1139,6 @@
     SUBDIR += rubygem-nexpose
     SUBDIR += rubygem-nmap-parser
     SUBDIR += rubygem-omniauth
-    SUBDIR += rubygem-omniauth14
     SUBDIR += rubygem-omniauth-bitbucket
     SUBDIR += rubygem-omniauth-cas
     SUBDIR += rubygem-omniauth-cas3
@@ -1135,7 +1147,6 @@
     SUBDIR += rubygem-omniauth-multipassword
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml
-    SUBDIR += rubygem-omniauth-saml17
     SUBDIR += rubygem-omniauth-shibboleth
     SUBDIR += rubygem-omniauth-shibboleth12
     SUBDIR += rubygem-openssl

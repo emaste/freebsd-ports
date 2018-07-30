@@ -20,11 +20,11 @@
     SUBDIR += c2ps
     SUBDIR += catdvi
     SUBDIR += cdlabelgen
+    SUBDIR += cloud-print-connector
     SUBDIR += cloudprint
     SUBDIR += cups
     SUBDIR += cups-bjnp
     SUBDIR += cups-cloud-print
-    SUBDIR += cups-connector
     SUBDIR += cups-filters
     SUBDIR += cups-fxlinuxprint
     SUBDIR += cups-pdf
@@ -197,6 +197,7 @@
     SUBDIR += py-pdf2
     SUBDIR += py-pollyreports
     SUBDIR += py-preppy
+    SUBDIR += py-psautohint
     SUBDIR += py-pycups
     SUBDIR += py-pyscript
     SUBDIR += py-python-ly
@@ -210,6 +211,7 @@
     SUBDIR += qpdf
     SUBDIR += qpdfview
     SUBDIR += qt5-printsupport
+    SUBDIR += R-cran-tinytex
     SUBDIR += rlpr
     SUBDIR += rprint
     SUBDIR += rtf2latex2e

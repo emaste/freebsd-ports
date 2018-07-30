@@ -3,6 +3,7 @@
 
     COMMENT = X11 fonts and font utilities
 
+    SUBDIR += Hasklig
     SUBDIR += alef
     SUBDIR += alegreya
     SUBDIR += alegreya-sans
@@ -32,6 +33,7 @@
     SUBDIR += crosextrafonts-carlito-ttf
     SUBDIR += cyberbit-ttfonts
     SUBDIR += cyr-rfx
+    SUBDIR += datalegreya
     SUBDIR += dejavu
     SUBDIR += dina
     SUBDIR += doulos
@@ -113,7 +115,6 @@
     SUBDIR += google-fonts
     SUBDIR += hack-font
     SUBDIR += hanazono-fonts-ttf
-    SUBDIR += hasklig
     SUBDIR += inconsolata-lgc-ttf
     SUBDIR += inconsolata-ttf
     SUBDIR += indic-ttf

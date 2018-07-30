@@ -77,7 +77,6 @@
     SUBDIR += py-tremc
     SUBDIR += py-vertex
     SUBDIR += qbittorrent
-    SUBDIR += qbittorrent-nox11
     SUBDIR += qtum
     SUBDIR += radarr
     SUBDIR += retroshare
@@ -93,8 +92,7 @@
     SUBDIR += transmission-cli
     SUBDIR += transmission-daemon
     SUBDIR += transmission-gtk
-    SUBDIR += transmission-qt4
-    SUBDIR += transmission-qt5
+    SUBDIR += transmission-qt
     SUBDIR += transmission-remote-gui
     SUBDIR += tribler
     SUBDIR += twister

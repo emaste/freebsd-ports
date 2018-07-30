@@ -13,7 +13,6 @@
     SUBDIR += ansiweather
     SUBDIR += apparix
     SUBDIR += artikulate
-    SUBDIR += artikulate-kde4
     SUBDIR += asbutton
     SUBDIR += asr-manpages
     SUBDIR += astrolog
@@ -106,6 +105,7 @@
     SUBDIR += fortuneit
     SUBDIR += fpc-chm
     SUBDIR += free42
+    SUBDIR += free42-skins
     SUBDIR += freebsd-doc-all
     SUBDIR += freebsd-doc-bn
     SUBDIR += freebsd-doc-da
@@ -186,6 +186,7 @@
     SUBDIR += inplace
     SUBDIR += ipa_conv
     SUBDIR += ipbt
+    SUBDIR += ironscanner
     SUBDIR += iselect
     SUBDIR += iso-codes
     SUBDIR += jargon
@@ -303,8 +304,10 @@
     SUBDIR += opencyc
     SUBDIR += openhab2
     SUBDIR += openhab2-addons
+    SUBDIR += openhmd
     SUBDIR += openmvg
     SUBDIR += openr2
+    SUBDIR += orange3
     SUBDIR += orville-write
     SUBDIR += osinfo-db
     SUBDIR += ossp-uuid
@@ -399,6 +402,10 @@
     SUBDIR += pspresent
     SUBDIR += ptsort
     SUBDIR += pubs
+    SUBDIR += py-PyUserInput
+    SUBDIR += py-QSpectrumAnalyzer
+    SUBDIR += py-SimpleSoapy
+    SUBDIR += py-SoapySDR
     SUBDIR += py-YABT
     SUBDIR += py-cinder
     SUBDIR += py-colorbrewer
@@ -406,6 +413,12 @@
     SUBDIR += py-emoji
     SUBDIR += py-fuzzy
     SUBDIR += py-glance
+    SUBDIR += py-kartograph
+    SUBDIR += py-orange3-associate
+    SUBDIR += py-orange3-datafusion
+    SUBDIR += py-orange3-educational
+    SUBDIR += py-orange3-network
+    SUBDIR += py-orange3-timeseries
     SUBDIR += py-osd
     SUBDIR += py-palettable
     SUBDIR += py-pexpect
@@ -414,15 +427,20 @@
     SUBDIR += py-progressbar2
     SUBDIR += py-progressbar231
     SUBDIR += py-pyfiglet
+    SUBDIR += py-pykml
     SUBDIR += py-pyprind
     SUBDIR += py-python-geohash
     SUBDIR += py-python-utils
     SUBDIR += py-qt4-demo
     SUBDIR += py-qt4-doc
     SUBDIR += py-qt5-demo
+    SUBDIR += py-scikit-fusion
+    SUBDIR += py-serverfiles
+    SUBDIR += py-soapy_power
     SUBDIR += py-socli
     SUBDIR += py-spdx
     SUBDIR += py-spdx-lookup
+    SUBDIR += py-spdx-tools
     SUBDIR += py-tqdm
     SUBDIR += py-yolk
     SUBDIR += pylize
@@ -438,6 +456,7 @@
     SUBDIR += qt5-l10n
     SUBDIR += qt5ct
     SUBDIR += qtchooser
+    SUBDIR += R-cran-xfun
     SUBDIR += raspberrypi-userland
     SUBDIR += raspbsd-led
     SUBDIR += ree
@@ -450,6 +469,7 @@
     SUBDIR += rubygem-dotenv-rails-rails4
     SUBDIR += rubygem-dotenv-rails-rails5
     SUBDIR += rubygem-dotenv-rails-rails50
+    SUBDIR += rubygem-haversine_distance
     SUBDIR += rubygem-iesd
     SUBDIR += rubygem-mime-types
     SUBDIR += rubygem-mime-types-data
@@ -473,6 +493,7 @@
     SUBDIR += sloccount
     SUBDIR += sls
     SUBDIR += smssend
+    SUBDIR += soapysdr
     SUBDIR += solarized
     SUBDIR += spamcalc
     SUBDIR += sshbuddy
@@ -484,6 +505,7 @@
     SUBDIR += table.el
     SUBDIR += talkfilters
     SUBDIR += tcb
+    SUBDIR += tdfiglet
     SUBDIR += team
     SUBDIR += telbook
     SUBDIR += tellico-kde4
@@ -509,6 +531,8 @@
     SUBDIR += unclutter-xfixes
     SUBDIR += unicode-emoji
     SUBDIR += upclient
+    SUBDIR += urbit
+    SUBDIR += urh
     SUBDIR += us-zipcodes
     SUBDIR += usbids
     SUBDIR += usbrh-libusb
@@ -547,5 +571,7 @@
     SUBDIR += yaunc
     SUBDIR += ytree
     SUBDIR += zoneinfo
+    SUBDIR += zygrib
+    SUBDIR += zygrib-maps
 
 .include <bsd.port.subdir.mk>
