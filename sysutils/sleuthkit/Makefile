@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	sleuthkit
-PORTVERSION=	4.6.1
+PORTVERSION=	4.6.2
 CATEGORIES=	sysutils security
 MASTER_SITES=	https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-${PORTVERSION}/
 
@@ -17,6 +17,8 @@ LICENSE_FILE_CPL=${WRKSRC}/licenses/cpl1.0.txt
 LICENSE_FILE_IBM=${WRKSRC}/licenses/IBM-LICENSE
 LICENSE_PERMS_CPL=dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_PERMS_IBM=dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_powerpc64=	fails to compile: cc1: unrecognized command line option -Wpedantic
 
 RUN_DEPENDS=	p5-DateTime-TimeZone>=0:devel/p5-DateTime-TimeZone \
 		exif:graphics/exif

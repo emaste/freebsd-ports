@@ -20,7 +20,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	4
+PORTREVISION=	7
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -75,7 +75,7 @@ USES=		gperf jpeg python:2.7,build pkgconfig \
 USE_GNOME=	glib20 libxml2 libxslt
 USE_QT=		core designer gui location network qml quick webchannel \
 		widgets buildtools_build qmake_build printsupport
-USE_XORG=	scrnsaverproto x11 xcb xcomposite xcursor xext xi xproto \
+USE_XORG=	x11 xcb xcomposite xcursor xext xi xorgproto \
 		xrandr xrender xscrnsaver xtst
 
 USE_LDCONFIG=	${QT_LIBDIR}
@@ -141,5 +141,7 @@ pre-configure:
 # Unbundle a few dependencies.
 	${PYTHON_CMD} ${WRKSRC}/src/3rdparty/chromium/build/linux/unbundle/replace_gn_files.py \
 		--system-libraries libwebp libxml libxslt yasm
+# Rerun syncqt.pl -- otherwise the resulting package misses some forwarding headers.
+	cd ${WRKSRC} && ${QT_BINDIR}/syncqt.pl -version ${QT5_VERSION}
 
 .include <bsd.port.post.mk>

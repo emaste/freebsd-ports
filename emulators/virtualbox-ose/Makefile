@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	virtualbox-ose
-PORTVERSION=	5.2.16
+PORTVERSION=	5.2.18
 PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
@@ -180,7 +180,7 @@ VBOX_UTILS+=	vboxwebsrv webtest
 
 .if ${PORT_OPTIONS:MX11}
 USE_SDL=	sdl
-USE_XORG+=	inputproto x11 xcursor xext xinerama xmu xt
+USE_XORG+=	xorgproto x11 xcursor xext xinerama xmu xt
 VBOX_PROGS+=	VBoxSDL
 .endif
 

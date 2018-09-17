@@ -34,7 +34,6 @@
     SUBDIR += am-aspell
     SUBDIR += amberfish
     SUBDIR += ansifilter
-    SUBDIR += ant-xinclude-task
     SUBDIR += antiword
     SUBDIR += apache-poi
     SUBDIR += apache-solr
@@ -65,7 +64,6 @@
     SUBDIR += bibtool
     SUBDIR += bibutils
     SUBDIR += bn-aspell
-    SUBDIR += bomstrip
     SUBDIR += br-aspell
     SUBDIR += bsddiff
     SUBDIR += bsdgrep
@@ -74,6 +72,7 @@
     SUBDIR += c2html
     SUBDIR += c2man
     SUBDIR += ca-aspell
+    SUBDIR += castxml
     SUBDIR += catdoc
     SUBDIR += cdif
     SUBDIR += cdiff
@@ -763,6 +762,7 @@
     SUBDIR += p5-Regexp-Common-Email-Address
     SUBDIR += p5-Regexp-Common-net-CIDR
     SUBDIR += p5-Regexp-Common-profanity_us
+    SUBDIR += p5-Regexp-Common-time
     SUBDIR += p5-Regexp-Copy
     SUBDIR += p5-Regexp-Debugger
     SUBDIR += p5-Regexp-DefaultFlags
@@ -1290,9 +1290,9 @@
     SUBDIR += py-duecredit
     SUBDIR += py-elasticsearch
     SUBDIR += py-elasticsearch-async
-    SUBDIR += py-elasticsearch5
     SUBDIR += py-elasticsearch-curator
     SUBDIR += py-elasticsearch-dsl
+    SUBDIR += py-elasticsearch5
     SUBDIR += py-elib.intl
     SUBDIR += py-empy
     SUBDIR += py-enchant
@@ -1317,6 +1317,7 @@
     SUBDIR += py-jaxml
     SUBDIR += py-jtextfsm
     SUBDIR += py-junit-xml
+    SUBDIR += py-laserhammer
     SUBDIR += py-libtre
     SUBDIR += py-libxml2
     SUBDIR += py-libxslt
@@ -1356,6 +1357,7 @@
     SUBDIR += py-pyaml
     SUBDIR += py-pyctpp2
     SUBDIR += py-pyes
+    SUBDIR += py-pygccxml
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
     SUBDIR += py-pyhamcrest
@@ -1382,6 +1384,7 @@
     SUBDIR += py-qt5-xml
     SUBDIR += py-qt5-xmlpatterns
     SUBDIR += py-rdflib
+    SUBDIR += py-recommonmark
     SUBDIR += py-regex
     SUBDIR += py-reno
     SUBDIR += py-reverend
@@ -1422,8 +1425,10 @@
     SUBDIR += py-trans
     SUBDIR += py-transifex-client
     SUBDIR += py-translationstring
+    SUBDIR += py-transpopy
     SUBDIR += py-tvgrab
     SUBDIR += py-ucl
+    SUBDIR += py-ufal.udpipe
     SUBDIR += py-whoosh
     SUBDIR += py-wicked
     SUBDIR += py-wordnet
@@ -1530,6 +1535,7 @@
     SUBDIR += rubygem-elasticsearch-api
     SUBDIR += rubygem-elasticsearch-dsl
     SUBDIR += rubygem-elasticsearch-transport
+    SUBDIR += rubygem-elasticsearch-xpack
     SUBDIR += rubygem-emot
     SUBDIR += rubygem-escape_utils
     SUBDIR += rubygem-escape_utils11
@@ -1549,9 +1555,8 @@
     SUBDIR += rubygem-heredoc_unindent
     SUBDIR += rubygem-hikidoc
     SUBDIR += rubygem-html-pipeline
-    SUBDIR += rubygem-html-pipeline27
-    SUBDIR += rubygem-html-pipeline-gitlab
     SUBDIR += rubygem-html-pipeline1
+    SUBDIR += rubygem-html-pipeline27
     SUBDIR += rubygem-html2text
     SUBDIR += rubygem-htmlentities
     SUBDIR += rubygem-ini
@@ -1830,6 +1835,7 @@
     SUBDIR += xmlcharent
     SUBDIR += xmldiff
     SUBDIR += xmlenc
+    SUBDIR += xmlf90
     SUBDIR += xmlformat
     SUBDIR += xmlgen
     SUBDIR += xmlindent
