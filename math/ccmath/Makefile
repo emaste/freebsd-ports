@@ -3,7 +3,7 @@
 
 PORTNAME=	ccmath
 PORTVERSION=	2.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	SUNSITE/libs
 
@@ -11,8 +11,6 @@ MAINTAINER=	db@FreeBSD.org
 COMMENT=	Mathematics library with many different functions
 
 LICENSE=	LGPL20
-
-BROKEN_aarch64=		fails to link: can't create dynamic relocation R_AARCH64_ADR_PREL_PG_HI21 against symbol: bias in readonly segment; recompile object files with -fPIC
 
 USE_LDCONFIG=	yes
 
@@ -24,7 +22,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64"
+.if ${ARCH} == "aarch64" || ${ARCH} == "amd64" || ${ARCH} == "i386"
 COPT=		-fPIC
 .endif
 
