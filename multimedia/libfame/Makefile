@@ -3,12 +3,15 @@
 
 PORTNAME=	libfame
 PORTVERSION=	0.9.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/fame/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Video encoding library
+
+LICENSE=	LGPL20
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
@@ -22,7 +25,8 @@ MMX_CONFIGURE_ENABLE=	mmx
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH}=="i386"
+.if ${ARCH} == "i386"
+MAKE_ARGS=	CFLAGS="${CFLAGS}" CC="${CC}"
 LLD_UNSAFE=	yes # cf. PR 226980
 .endif
 
