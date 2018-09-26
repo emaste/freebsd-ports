@@ -3,7 +3,7 @@
 
 PORTNAME=	libboard
 DISTVERSION=	0.9.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -32,9 +32,7 @@ DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} != i386
 CXXFLAGS+=	-fPIC
-.endif
 
 pre-configure:
 	${REINPLACE_CMD} -e 's|-O3|${CXXFLAGS}|;s|g++|${CXX}|'	\
