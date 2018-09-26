@@ -133,6 +133,7 @@ post-configure:
 	${REINPLACE_CMD} \
 		-e 's|SHLIB_VERSION_NUMBER "1.1"|SHLIB_VERSION_NUMBER "${OPENSSL_SHLIBVER}"|' \
 		${WRKSRC}/include/openssl/opensslv.h
+	${REINPLACE_CMD} -e 's|\^GNU ld|GNU|' ${WRKSRC}/Makefile.shared
 
 post-install-SHARED-on:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lib*.so.${OPENSSL_SHLIBVER} \
