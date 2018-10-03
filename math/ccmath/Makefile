@@ -13,6 +13,7 @@ COMMENT=	Mathematics library with many different functions
 LICENSE=	LGPL20
 
 USE_LDCONFIG=	yes
+PLIST_FILES=	include/ccmath.h lib/libccm.a lib/libccm.so lib/libccm.so.1
 
 PORTDOCS=	*
 SRC_DIRS=	cfit complex fft geom intg matrix roots sfunc simu sort statf \
@@ -22,9 +23,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "aarch64" || ${ARCH} == "amd64" || ${ARCH} == "i386"
 COPT=		-fPIC
-.endif
 
 post-extract:
 	@${CP} ${WRKSRC}/matrix/supp/solv.c ${WRKSRC}/matrix

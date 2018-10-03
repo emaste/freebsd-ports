@@ -174,6 +174,7 @@
     SUBDIR += cryptominisat
     SUBDIR += cvc3
     SUBDIR += cvc4
+    SUBDIR += deal.ii
     SUBDIR += diehard
     SUBDIR += dieharder
     SUBDIR += djbfft
@@ -356,7 +357,6 @@
     SUBDIR += mppp
     SUBDIR += mprime
     SUBDIR += msieve
-    SUBDIR += mtl
     SUBDIR += mtrxmath
     SUBDIR += multichoose
     SUBDIR += mumps
