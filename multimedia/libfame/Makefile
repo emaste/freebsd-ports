@@ -13,10 +13,11 @@ COMMENT=	Video encoding library
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
 USES=		libtool
 USE_LDCONFIG=	yes
+
+GNU_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	MMX
 OPTIONS_DEFAULT=MMX
@@ -24,10 +25,8 @@ OPTIONS_DEFAULT=MMX
 MMX_CONFIGURE_ENABLE=	mmx
 
 .include <bsd.port.options.mk>
-
 .if ${ARCH} == "i386"
-MAKE_ARGS=	CFLAGS="${CFLAGS}" CC="${CC}"
-LLD_UNSAFE=	yes # cf. PR 226980
+MAKE_ARGS=	CFLAGS="${CLFAGS}" CC="${CC}"
 .endif
 
 post-patch:
