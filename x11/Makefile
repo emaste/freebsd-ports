@@ -37,6 +37,7 @@
     SUBDIR += cinnamon-session
     SUBDIR += cl-clx
     SUBDIR += cl-clx-sbcl
+    SUBDIR += compton-conf
     SUBDIR += controllermap
     SUBDIR += cool-retro-term
     SUBDIR += decurs
@@ -417,6 +418,7 @@
     SUBDIR += xfce4-embed-plugin
     SUBDIR += xfce4-goodies
     SUBDIR += xfce4-quicklauncher-plugin
+    SUBDIR += xfce4-screensaver
     SUBDIR += xfce4-screenshooter-plugin
     SUBDIR += xfce4-taskmanager
     SUBDIR += xfce4-terminal
