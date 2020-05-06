@@ -15,6 +15,7 @@ LICENSE=	GPLv2
 
 ONLY_FOR_ARCHS=	amd64 i386 powerpc powerpc64
 
+BUILD_DEPENDS=	as:devel/binutils
 LIB_DEPENDS=	libnettle.so:security/nettle \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \

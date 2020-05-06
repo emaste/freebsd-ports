@@ -19,6 +19,7 @@ LICENSE_TEXT=	The text of the license can be obtained from the following URL:\
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 ONLY_FOR_ARCHS=	amd64 i386
+BUILD_DEPENDS=	as:devel/binutils
 LLD_UNSAFE=	yes
 
 NO_WRKSUBDIR=	yes

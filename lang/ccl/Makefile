@@ -23,6 +23,7 @@ CCL_PLIST=	${WRKDIR}/pkg-plist
 # the following files will not be installed
 EXCLUDE=	cocoa-ide lisp-kernel scripts
 
+BUILD_DEPENDS=	as:devel/binutils
 USE_ASDF=	yes
 
 .include "${.CURDIR}/../../devel/cl-asdf/bsd.cl-asdf.mk"

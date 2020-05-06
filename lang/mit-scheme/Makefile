@@ -14,6 +14,7 @@ COMMENT=	MIT Scheme: includes runtime, compiler, and edwin binaries
 LICENSE=	GPLv2
 
 ONLY_FOR_ARCHS=	i386 amd64
+BUILD_DEPENDS=	as:devel/binutils
 GNU_CONFIGURE=	yes
 USES=		gmake
 WRKSRC=		${WRKDIR}/mit-scheme-${PORTVERSION}/src/

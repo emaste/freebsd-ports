@@ -12,6 +12,7 @@ COMMENT=	VM Back Command Line Tools for VMware
 ONLY_FOR_ARCHS=	i386 amd64
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
+BUILD_DEPENDS=	as:devel/binutils
 USES=		iconv
 MAKE_ENV+=	__MAKE_CONF=/dev/null ASFLAGS="${ASFLAGS}"
 MAKE_ENV+=	LD="${CC}"

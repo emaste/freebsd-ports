@@ -23,6 +23,7 @@ COMMENT?=	Free Pascal compiler with Turbo and Delphi
 
 ONLY_FOR_ARCHS=	amd64 i386
 
+BUILD_DEPENDS=	as:devel/binutils
 USES+=		gmake iconv
 USE_BINUTILS=	yes
 BOOTVER=	3.0.4

@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 USE_GITHUB=	yes
 GH_TUPLE=	fujita-y:ypsilon:0.9.6-update3
 
+BUILD_DEPENDS=	as:devel/binutils
 USES=		gmake
 USE_GCC=	yes
 TEST_TARGET=	check  # XXX: tests fail

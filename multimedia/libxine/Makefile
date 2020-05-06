@@ -15,7 +15,8 @@ COMMENT=	Libraries for xine multimedia player
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	v4l_compat>=1.0.20100321:multimedia/v4l_compat
+BUILD_DEPENDS=	v4l_compat>=1.0.20100321:multimedia/v4l_compat \
+		devel/binutils
 LIB_DEPENDS=	libFLAC.so:audio/flac \
 		liba52.so:audio/liba52 \
 		libvorbis.so:audio/libvorbis \

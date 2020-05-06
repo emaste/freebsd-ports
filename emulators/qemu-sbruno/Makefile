@@ -16,6 +16,7 @@ USE_GITHUB=	yes
 GH_TUPLE=	seanbruno:qemu-bsd-user:d587db6	\
 		qemu:keycodemapdb:10739aa:keycodemapdb/ui/keycodemapdb
 HAS_CONFIGURE=	yes
+BUILD_DEPENDS=	as:devel/binutils
 USES=		bison compiler:c11 gmake perl5 pkgconfig python:2.7,build
 USE_PERL5=	build
 MAKE_ENV+=	BSD_MAKE="${MAKE}" V=1
