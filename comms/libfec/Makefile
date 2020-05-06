@@ -17,6 +17,7 @@ LICENSE=	LGPL21
 MAKEFILE=	makefile
 
 GNU_CONFIGURE=	yes
+BUILD_DEPENDS=	as:devel/binutils
 USES=		autoreconf compiler:c11 gmake tar:bzip2
 USE_LDCONFIG=	yes
 PLIST_FILES=	include/fec.h		\

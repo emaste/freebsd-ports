@@ -20,6 +20,7 @@ LICENSE_PERMS_PARALLAX=	dist-mirror pkg-mirror auto-accept
 
 BROKEN_aarch64=	fails to configure: DXX-Archive.3: checking version of assembler 'as' ... error: No such file or directory
 
+BUILD_DEPENDS=	as:devel/binutils
 LIB_DEPENDS=	libphysfs.so:devel/physfs \
 		libpng.so:graphics/png
 

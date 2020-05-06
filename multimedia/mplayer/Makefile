@@ -43,6 +43,7 @@ SUB_FILES=	pkg-message
 CONFLICTS=	mplayer2-2.*
 
 CONFFILES=	example.conf input.conf menu.conf dvb-menu.conf
+BUILD_DEPENDS=	as:devel/binutils
 USES+=		iconv pkgconfig
 
 OPTIONS_SUB=	yes

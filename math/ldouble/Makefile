@@ -16,6 +16,7 @@ NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 USE_LDCONFIG=	yes
 ONLY_FOR_ARCHS=	i386 sparc64
+BUILD_DEPENDS=	as:devel/binutils
 
 PLIST_FILES=	lib/libml.a \
 		lib/libml.so \

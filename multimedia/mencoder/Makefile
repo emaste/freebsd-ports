@@ -76,6 +76,7 @@ CONFIGURE_ARGS+=	--disable-mplayer \
 			--disable-enca \
 			--disable-musepack
 
+BUILD_DEPENDS=	as:devel/binutils
 LIB_DEPENDS+=	libmp3lame.so:audio/lame
 
 ALL_TARGET=	mencoder
