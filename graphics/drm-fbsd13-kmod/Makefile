@@ -2,12 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	drm-fbsd13-kmod
-PORTVERSION=	5.4.62.g20210122
-PORTREVISION=	3
+PORTVERSION=	5.4.62.emaste.g20210131
+PORTREVISION=	
 CATEGORIES=	graphics kld
 
-MAINTAINER=	x11@FreeBSD.org
-COMMENT=	DRM modules for the linuxkpi-based KMS components
+MAINTAINER=	emaste@FreeBSD.org
+COMMENT=	DRM modules for the linuxkpi-based KMS components w/ emaste test patch
 
 LICENSE=	BSD2CLAUSE MIT GPLv2
 LICENSE_COMB=	multi
@@ -28,9 +28,9 @@ OPTIONS_SUB=	yes
 USES=		kmod uidfix compiler:c++11-lang
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	freebsd
+GH_ACCOUNT=	emaste
 GH_PROJECT=	drm-kmod
-GH_TAGNAME=	drm_v5.4.62_10
+GH_TAGNAME=	b57b441102e9989f5a7d4c9f3c7f29c3790c53f0
 
 .include <bsd.port.options.mk>
 
