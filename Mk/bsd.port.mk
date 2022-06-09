@@ -1778,6 +1778,7 @@ CFLAGS:=	${CFLAGS:C/${_CPUCFLAGS}//}
 # split out debug symbols since the plist won't know to expect it.
 MAKE_ENV+=	MK_DEBUG_FILES=no
 MAKE_ENV+=	MK_KERNEL_SYMBOLS=no
+MAKE_ENV+=	MK_SPLIT_KERNEL_DEBUG=no
 
 CONFIGURE_SHELL?=	${SH}
 MAKE_SHELL?=	${SH}
